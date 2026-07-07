@@ -1,0 +1,8 @@
+source,earliest_year,latest_year,record_type,providers,records
+FMA Archived XLSB,2013,2015,"Quarterly fund-level (FUM, returns, fees, holdings)",25,5128
+BNZ Disclosure CSVs,2013,2016,Annual returns by fund,1,15
+Interest.co.nz articles,2013,2013,Quarterly return tables by provider,12,135
+ANZ website,2007,2026,Annualized returns (current snapshot),1,14
+Fisher Funds website,2007,2026,Annualized returns (current snapshot),1,11
+Generate website,2013,2026,Annualized returns (current snapshot),1,3
+AMP website,2024,2026,Quarterly fund update PDFs (not parsed),1,0

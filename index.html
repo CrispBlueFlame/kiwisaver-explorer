@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KiwiSaver Explorer — find and compare NZ KiwiSaver funds</title>
+<meta name="description" content="Interactive tool to find the best KiwiSaver fund for you and explore historical NZ KiwiSaver fund data.">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="logo">KS</span>
+    <div>
+      <h1>KiwiSaver Explorer</h1>
+      <p class="tagline">Find your fund. Explore the data.</p>
+    </div>
+  </div>
+  <nav class="tabs" id="tabs">
+    <button data-view="finder" class="active">Find my fund</button>
+    <button data-view="calculator">Calculator</button>
+    <button data-view="compare">Compare <span id="compare-badge" class="badge" hidden>0</span></button>
+    <button data-view="explorer">Data explorer</button>
+    <button data-view="charts">Chart builder</button>
+    <button data-view="about">About the data</button>
+  </nav>
+</header>
+
+<main id="app">
+  <div id="loading" class="loading">Loading fund data…</div>
+
+  <!-- FINDER -->
+  <section id="view-finder" class="view" hidden>
+    <div class="finder-grid">
+      <form id="finder-form" class="panel questionnaire" aria-label="Your profile">
+        <h2>About you</h2>
+
+        <label class="q">Risk appetite
+          <select name="risk">
+            <option value="">No preference</option>
+            <option value="Defensive">Very cautious — protect my money</option>
+            <option value="Conservative">Cautious</option>
+            <option value="Balanced" selected>Balanced</option>
+            <option value="Growth">Growth-focused</option>
+            <option value="Aggressive">Aggressive — maximise growth</option>
+          </select>
+        </label>
+
+        <label class="q">When will you use this money?
+          <select name="horizon">
+            <option value="">No preference</option>
+            <option value="2">Within a few years</option>
+            <option value="5">5–10 years</option>
+            <option value="15" selected>10+ years (long term)</option>
+            <option value="30">First home / retirement, decades away</option>
+          </select>
+        </label>
+
+        <label class="q">Current KiwiSaver balance
+          <select name="balance">
+            <option value="10000" selected>Any</option>
+            <option value="5000">Under $10k</option>
+            <option value="30000">$10k–$50k</option>
+            <option value="100000">$50k–$150k</option>
+            <option value="250000">$150k+</option>
+          </select>
+        </label>
+
+        <label class="q">How much do fees matter to you?
+          <span class="range-row">
+            <input type="range" name="fee_weight" min="0" max="3" step="1" value="2">
+            <output id="fee_weight_out">A lot</output>
+          </span>
+        </label>
+
+        <label class="q">How much do past returns matter?
+          <span class="range-row">
+            <input type="range" name="return_weight" min="0" max="3" step="1" value="2">
+            <output id="return_weight_out">A lot</output>
+          </span>
+        </label>
+
+        <label class="q check">
+          <input type="checkbox" name="ethical"> Prefer ethical / responsible funds
+        </label>
+
+        <label class="q check">
+          <input type="checkbox" name="history_only"> Only funds with a long track record
+        </label>
+
+        <p class="disclaimer">Educational tool using public data. Not financial advice.</p>
+      </form>
+
+      <div class="panel results">
+        <div class="results-head">
+          <h2>Best matches</h2>
+          <span id="match-count" class="muted"></span>
+        </div>
+        <div id="finder-cost" class="cost-note"></div>
+        <ol id="finder-results" class="fund-cards"></ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALCULATOR -->
+  <section id="view-calculator" class="view" hidden>
+    <div class="finder-grid">
+      <form id="calc-form" class="panel questionnaire" aria-label="Investment settings">
+        <h2>Try it out</h2>
+        <label class="q">Fund
+          <select name="fund" id="calc-fund"></select>
+        </label>
+        <div class="mode-toggle" role="tablist">
+          <button type="button" id="calc-mode-proj" class="active" data-mode="projection">Project forward</button>
+          <button type="button" id="calc-mode-back" data-mode="backtest">What actually happened</button>
+        </div>
+
+        <label class="q">I contribute
+          <span class="range-row">
+            <input type="number" name="amount" id="calc-amount" value="100" min="0" step="10" style="flex:1">
+          </span>
+        </label>
+        <label class="q">every
+          <select name="freq" id="calc-freq">
+            <option value="52">week</option>
+            <option value="26">fortnight</option>
+            <option value="12" selected>month</option>
+          </select>
+        </label>
+
+        <div id="calc-proj-only">
+          <label class="q">for
+            <select name="years" id="calc-years">
+              <option value="5">5 years</option>
+              <option value="10">10 years</option>
+              <option value="20" selected>20 years</option>
+              <option value="30">30 years</option>
+              <option value="40">40 years</option>
+            </select>
+          </label>
+          <label class="q">Assumed yearly return
+            <span class="range-row">
+              <input type="number" name="rate" id="calc-rate" step="0.1" style="flex:1">
+              <output>%</output>
+            </span>
+          </label>
+          <p class="disclaimer" id="calc-rate-hint"></p>
+        </div>
+
+        <div id="calc-back-only" hidden>
+          <label class="q">Starting from
+            <select name="startyear" id="calc-startyear"></select>
+          </label>
+          <p class="disclaimer">Uses this fund's real reported annual returns. Data ends Dec 2022.</p>
+        </div>
+
+        <label class="q">Starting balance (optional)
+          <input type="number" name="start" id="calc-start" value="0" min="0" step="500">
+        </label>
+        <p class="disclaimer">Educational estimate, not advice. Returns are shown after fees and tax.</p>
+      </form>
+
+      <div class="panel results" id="calc-results"></div>
+    </div>
+    <div class="panel chart-canvas-wrap"><canvas id="calc-canvas" height="130"></canvas></div>
+  </section>
+
+  <!-- COMPARE -->
+  <section id="view-compare" class="view" hidden>
+    <div class="panel">
+      <div class="explorer-controls">
+        <select id="cmp-add"><option value="">Add a fund to compare…</option></select>
+        <span class="muted">or use the “＋ Compare” buttons in Find my fund and the Data explorer.</span>
+        <button id="cmp-clear" class="btn-secondary" type="button">Clear all</button>
+      </div>
+      <div id="cmp-empty" class="muted">No funds selected yet. Add 2–3 to see them side by side.</div>
+      <div class="table-wrap" id="cmp-table-wrap" hidden>
+        <table id="cmp-table"><tbody id="cmp-body"></tbody></table>
+      </div>
+    </div>
+    <div class="panel chart-canvas-wrap" id="cmp-chart-panel" hidden>
+      <h3>If you contributed $100/month for 20 years</h3>
+      <canvas id="cmp-canvas" height="130"></canvas>
+    </div>
+  </section>
+
+  <!-- EXPLORER -->
+  <section id="view-explorer" class="view" hidden>
+    <div class="panel">
+      <div class="explorer-controls">
+        <input type="search" id="ex-search" placeholder="Search fund or provider…" aria-label="Search">
+        <select id="ex-type"><option value="">All types</option></select>
+        <select id="ex-provider"><option value="">All providers</option></select>
+        <label class="inline-check"><input type="checkbox" id="ex-ethical"> Ethical only</label>
+        <label class="inline-check"><input type="checkbox" id="ex-history"> Has history</label>
+        <span id="ex-count" class="muted"></span>
+        <button id="ex-export" class="btn-secondary" type="button">Export CSV</button>
+      </div>
+      <div class="table-wrap">
+        <table id="ex-table">
+          <thead><tr id="ex-head"></tr></thead>
+          <tbody id="ex-body"></tbody>
+        </table>
+      </div>
+    </div>
+    <div id="fund-detail" class="panel" hidden></div>
+  </section>
+
+  <!-- CHARTS -->
+  <section id="view-charts" class="view" hidden>
+    <div class="panel chart-builder">
+      <h2>Build a chart</h2>
+      <div class="chart-controls">
+        <label>Chart type
+          <select id="ch-type">
+            <option value="scatter">Scatter</option>
+            <option value="bar">Bar</option>
+            <option value="line">Line (history)</option>
+            <option value="box">Distribution by group</option>
+          </select>
+        </label>
+        <label>X axis
+          <select id="ch-x"></select>
+        </label>
+        <label>Y axis
+          <select id="ch-y"></select>
+        </label>
+        <label>Group / colour by
+          <select id="ch-group"></select>
+        </label>
+        <label class="inline-check"><input type="checkbox" id="ch-ethical"> Ethical only</label>
+      </div>
+      <p id="ch-hint" class="muted"></p>
+    </div>
+    <div class="panel chart-canvas-wrap">
+      <canvas id="ch-canvas" height="140"></canvas>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="view-about" class="view" hidden>
+    <div class="panel prose" id="about-content"></div>
+  </section>
+</main>
+
+<script src="js/data.js" defer></script>
+<script src="js/finder.js" defer></script>
+<script src="js/explorer.js" defer></script>
+<script src="js/charts.js" defer></script>
+<script src="js/calculator.js" defer></script>
+<script src="js/compare.js" defer></script>
+<script src="js/app.js" defer></script>
+</body>
+</html>

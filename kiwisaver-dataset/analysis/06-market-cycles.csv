@@ -1,0 +1,24 @@
+Period,Description,Risk Indicator,Funds,Avg Return %,Min %,Max %
+2020-03-31,COVID crash (Conservative),N/A,45,0.9,-3.79,5.1
+2020-03-31,COVID crash (Balanced),N/A,50,-1.77,-7.66,4.56
+2020-03-31,COVID crash (Growth),N/A,41,-3.1,-13.05,23.65
+2020-03-31,COVID crash (Aggressive),N/A,8,-6.05,-12.07,2.09
+2020-06-30,Initial recovery (Conservative),N/A,47,2.25,-0.47,5.22
+2020-06-30,Initial recovery (Balanced),N/A,50,2.8,-2.34,8.34
+2020-06-30,Initial recovery (Growth),N/A,49,3.47,-5.88,26.31
+2020-06-30,Initial recovery (Aggressive),N/A,8,1.49,-4.2,11.31
+2021-09-30,2021 growth,1,39,0.68,-1.14,4.46
+2021-09-30,2021 growth,2,16,-0.62,-3.15,0.52
+2021-09-30,2021 growth,3,156,1.93,-13.78,16.28
+2021-09-30,2021 growth,4,160,12.91,-0.77,32.15
+2021-09-30,2021 growth,5,247,19.72,-15.68,55.07
+2021-09-30,2021 growth,6,81,26.85,-28.54,51.47
+2021-09-30,2021 growth,7,1,9.98,9.98,9.98
+2021-09-30,2021 growth (Conservative),N/A,134,2.33,-2.91,7.78
+2021-09-30,2021 growth (Balanced),N/A,140,10.38,-0.55,20.71
+2021-09-30,2021 growth (Growth),N/A,144,18.68,-0.77,51.47
+2021-09-30,2021 growth (Aggressive),N/A,27,19.06,-0.77,30.37
+2022-12-31,2022 downturn (Conservative),N/A,55,-4.42,-12.51,1.68
+2022-12-31,2022 downturn (Balanced),N/A,57,-10.65,-18.12,-5.18
+2022-12-31,2022 downturn (Growth),N/A,55,-14.09,-29.71,-8.1
+2022-12-31,2022 downturn (Aggressive),N/A,10,-14.49,-16.56,-13.24
