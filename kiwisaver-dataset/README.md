@@ -10,7 +10,7 @@ Until December 2022, the Financial Markets Authority published consolidated quar
 
 | Source | Period | Records | Type |
 |--------|--------|---------|------|
-| FMA Quarterly Fund Updates | Sep 2015 - Dec 2022 | 6,387 | Fund-level returns, fees, allocations, holdings |
+| FMA Quarterly Fund Updates | Sep 2013 - Dec 2022 | 9,755 | Fund-level returns, fees, allocations, holdings. 2013-2015 recovered from Wayback-archived XLSB files no longer on the FMA site; overlapping 2015 quarters deduplicated. |
 | Smart Investor (Sorted) | Current snapshot | 419 | Fund names, types, fees, 1yr/5yr returns |
 | FundCompare | Current snapshot | 26 providers | Provider-level AUM, members, fees |
 | Provider Fund Update PDFs | 2023-2026 | 499 | Fund-level returns, fees, FUM from ANZ, BNZ, Milford, Fisher, Mercer, Simplicity, Booster |
@@ -52,7 +52,7 @@ Until December 2022, the Financial Markets Authority published consolidated quar
 ## Known Data Gaps
 
 ### Missing quarterly periods
-- 2015 Q1, Q2 (KiwiSaver data collection started Sep 2015)
+- 2013 Q1, Q2 (recovered archives start Sep 2013)
 - 2017 Q1, Q2, Q3
 - 2019 Q3
 - 2021 Q2
@@ -61,8 +61,8 @@ Until December 2022, the Financial Markets Authority published consolidated quar
 ### Post-2022
 No consolidated quarterly fund data after December 2022. The FMA stopped publishing. Data for 2023-2026 exists on the Disclose Register but requires API access.
 
-### Pre-2015
-KiwiSaver launched in 2007. Fund-level quarterly data starts September 2015. For earlier years, only the FMA annual reports provide industry-level aggregates.
+### Pre-2013
+KiwiSaver launched in 2007. Fund-level quarterly data starts September 2013 (the earliest Wayback-recovered FMA archive). For earlier years, the FMA annual reports provide industry-level aggregates, and Wayback-recovered Morningstar category averages give market context back to 2010.
 
 ## License
 
