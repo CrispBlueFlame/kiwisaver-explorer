@@ -35,6 +35,7 @@ App.renderAbout = function () {
     <ul>
       <li><b>Current snapshot:</b> ${m.sources.current}</li>
       <li><b>History:</b> ${m.sources.history}</li>
+      ${m.early_returns ? `<li><b>Pre-2013 context (${m.early_returns.range.first.slice(0, 4)}–${m.early_returns.range.last.slice(0, 4)}):</b> ${m.early_returns.source}. ${m.early_returns.note}</li>` : ""}
     </ul>
     <p class="muted">Every source is public. The FMA published consolidated quarterly
        KiwiSaver data as downloadable files until December 2022, then stopped; the current
