@@ -195,7 +195,7 @@ def build():
         "fund_types": list(TYPE_META.keys()),
         "sources": {
             "current": "Smart Investor (Sorted) + FundCompare snapshot",
-            "history": "FMA Quarterly Fund Updates 2015-2022",
+            "history": "FMA Quarterly Fund Updates 2013-2022 (2013-2015 recovered from Wayback Machine archives)",
         },
         "license": "Data CC BY 4.0. Not financial advice.",
     }

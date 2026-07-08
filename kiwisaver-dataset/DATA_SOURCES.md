@@ -8,7 +8,7 @@ KiwiSaver holds roughly $123 billion for about 3.4 million New Zealanders (appro
 
 We spent roughly 8 hours collecting data that should be downloadable from a single government webpage.
 
-This document describes the full data-collection effort behind the dataset. The KiwiSaver Explorer tool built on top of it draws mainly on two of these sources: the FMA quarterly history (September 2015 to December 2022) and the current Smart Investor snapshot.
+This document describes the full data-collection effort behind the dataset. The KiwiSaver Explorer tool built on top of it draws mainly on two of these sources: the FMA quarterly history (September 2013 to December 2022, with the 2013 to mid-2015 quarters recovered from Wayback Machine archives) and the current Smart Investor snapshot.
 
 ## What We Collected and Where It Came From
 
