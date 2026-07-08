@@ -3,9 +3,9 @@
 Interactive, static site for finding and comparing New Zealand KiwiSaver funds.
 Three modes:
 
-- **Find my fund** — answer a few questions (risk, horizon, balance, fee/return priorities, ethical preference) and get ranked, explained recommendations.
-- **Data explorer** — filter, sort, search and export every fund; click a fund for its history (returns, fees, allocation) from the FMA quarterly data.
-- **Chart builder** — build scatter, bar, distribution and historical line charts across any dimension.
+- **Find my fund:** answer a few questions (risk, horizon, balance, fee/return priorities, ethical preference) and get ranked, explained recommendations.
+- **Data explorer:** filter, sort, search and export every fund; click a fund for its history (returns, fees, allocation) from the FMA quarterly data.
+- **Chart builder:** build scatter, bar, distribution and historical line charts across any dimension.
 
 No backend, no build step. Data is baked in as JSON and everything runs client-side.
 
