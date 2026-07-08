@@ -82,6 +82,22 @@ def titlecase(s):
     return "".join(out)
 
 
+def load_early_returns():
+    """Morningstar peer-group category 1yr averages 2010-2013 (pre-FMA context layer).
+    Keyed by category; the site maps a fund's type onto its category."""
+    path = os.path.join(DATASET, "data/morningstar-early/category-returns.csv")
+    if not os.path.exists(path):
+        return {}
+    out = defaultdict(list)
+    for r in load(path):
+        v = num(r.get("return_1yr"))
+        if v is not None:
+            out[r["category"]].append({"quarter": r["quarter"], "return_1yr": v})
+    for cat in out:
+        out[cat].sort(key=lambda x: x["quarter"])
+    return dict(out)
+
+
 def build():
     si = load(os.path.join(DATASET, "data/smart-investor/funds.csv"))
     fma = load(os.path.join(DATASET, "data/fma-quarterly/combined.csv"))
@@ -207,11 +223,22 @@ def build():
     used = {f["hkey"] for f in funds if f["has_history"]}
     hist_out = {k: v for k, v in hist.items() if k in used}
 
+    early = load_early_returns()
+    if early:
+        eq = sorted({p["quarter"] for s in early.values() for p in s})
+        meta["early_returns"] = {
+            "source": "Morningstar KiwiSaver Performance Survey (Wayback-recovered)",
+            "note": "Category peer-group averages, not individual funds. Shown as pre-2013 context only.",
+            "range": {"first": eq[0], "last": eq[-1]},
+            "categories": sorted(early.keys()),
+        }
+
     os.makedirs(OUT, exist_ok=True)
     _write("current-funds.json", funds)
     _write("fma-history.json", hist_out)
     _write("providers.json", providers)
     _write("meta.json", meta)
+    _write("early-returns.json", early)
 
     print(f"funds={len(funds)} providers={len(providers)} "
           f"history_funds={len(hist_out)} fma_rows={len(fma)}")

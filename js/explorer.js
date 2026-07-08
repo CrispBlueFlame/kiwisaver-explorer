@@ -115,6 +115,10 @@ Explorer.showDetail = function (id) {
     const deep = first <= "2015";
     histHead = `<h3>History (FMA ${span})${deep ? ` <span class="depth-pill">deep · since ${first}</span>` : ""}</h3>`;
   }
+  const early = hist && f.type ? KS.earlyForType(f.type) : null;
+  const earlyNote = early
+    ? `<p class="muted early-note">Dashed grey before 2013 is the Morningstar <b>${KS.EARLY_CAT[f.type]}</b> category 1yr average (2010–2013). Market context for this fund's risk level, not this fund itself.</p>`
+    : "";
   box.hidden = false;
   box.innerHTML = `
     <h2><span class="dot" style="background:${KS.typeColor(f.type)}"></span>${f.name}
@@ -129,6 +133,7 @@ Explorer.showDetail = function (id) {
       <div class="metric"><b>${KS.fmtMoney(KS.feeCost(f.fee, 50000))}</b><span>fee on $50k</span></div>
     </div>
     ${hist ? `${histHead}<canvas id="detail-canvas" height="120"></canvas>
+      ${earlyNote}
       <p class="muted">${latestAlloc(hist)}</p>`
       : `<p class="muted">No quarterly history available for this fund in the FMA dataset.</p>`}
   `;
@@ -137,17 +142,30 @@ Explorer.showDetail = function (id) {
 
   if (Explorer.detailChart) Explorer.detailChart.destroy();
   if (hist) {
-    const pts = hist.filter((h) => h.return_1yr != null);
-    const feePts = hist.filter((h) => h.fee != null);
+    // unified time axis: Morningstar early quarters (2010–2013) ∪ this fund's history quarters
+    const earlyMap = new Map((early || []).map((e) => [e.quarter, e.return_1yr]));
+    const retMap = new Map(hist.filter((h) => h.return_1yr != null).map((h) => [h.quarter, h.return_1yr]));
+    const feeMap = new Map(hist.filter((h) => h.fee != null).map((h) => [h.quarter, h.fee]));
+    const labels = [...new Set([...earlyMap.keys(), ...hist.map((h) => h.quarter)])].sort();
+    const at = (m) => labels.map((q) => (m.has(q) ? m.get(q) : null));
+    const datasets = [
+      { label: "1yr return %", data: at(retMap), borderColor: KS.typeColor(f.type), tension: 0.25, yAxisID: "y", spanGaps: true },
+      { label: "fee %", data: at(feeMap), borderColor: "#8fa3b5", borderDash: [4, 4], tension: 0.25, yAxisID: "y1", spanGaps: true },
+    ];
+    if (early)
+      datasets.push({
+        label: `Morningstar ${KS.EARLY_CAT[f.type]} avg (pre-2013)`,
+        data: at(earlyMap),
+        borderColor: "#6b7a8a",
+        borderDash: [2, 3],
+        pointRadius: 2,
+        tension: 0.25,
+        yAxisID: "y",
+        spanGaps: true,
+      });
     Explorer.detailChart = new Chart(document.getElementById("detail-canvas"), {
       type: "line",
-      data: {
-        labels: pts.map((h) => h.quarter),
-        datasets: [
-          { label: "1yr return %", data: pts.map((h) => h.return_1yr), borderColor: KS.typeColor(f.type), tension: 0.25, yAxisID: "y" },
-          { label: "fee %", data: feePts.map((h) => h.fee), borderColor: "#8fa3b5", borderDash: [4, 4], tension: 0.25, yAxisID: "y1" },
-        ],
-      },
+      data: { labels, datasets },
       options: {
         responsive: true,
         interaction: { mode: "index", intersect: false },

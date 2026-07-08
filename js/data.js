@@ -8,17 +8,28 @@ const KS = {
 };
 
 KS.load = async function () {
-  const [funds, providers, history, meta] = await Promise.all([
+  const [funds, providers, history, meta, early] = await Promise.all([
     fetch("data/current-funds.json").then((r) => r.json()),
     fetch("data/providers.json").then((r) => r.json()),
     fetch("data/fma-history.json").then((r) => r.json()),
     fetch("data/meta.json").then((r) => r.json()),
+    fetch("data/early-returns.json").then((r) => r.json()).catch(() => ({})),
   ]);
   KS.funds = funds;
   KS.providers = providers;
   KS.history = history;
   KS.meta = meta;
+  KS.early = early || {};
   KS.ready = true;
+};
+
+// map a fund type onto the Morningstar peer-group category, then return its
+// pre-2013 1yr-average series (context only, not the fund itself). Null if none.
+KS.EARLY_CAT = { Defensive: "Conservative", Conservative: "Conservative",
+  Balanced: "Balanced", Growth: "Growth", Aggressive: "Aggressive" };
+KS.earlyForType = function (type) {
+  const cat = KS.EARLY_CAT[type];
+  return (cat && KS.early && KS.early[cat]) || null;
 };
 
 // formatting helpers
