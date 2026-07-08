@@ -1,0 +1,419 @@
+id,name,provider,type,fee,return_1yr,return_5yr,risk_band,risk_lo,risk_hi,horizon_lo,horizon_hi,ethical,has_history,history_since
+0,Aggressive Fund,Supereasy KiwiSaver Superannuation Scheme,Growth,0.5,11.72,7.51,4–5,4,5,6,12,False,False,
+1,Aggressive Fund,Fisher Funds KiwiSaver Plan,Growth,1.23,1.65,,4–5,4,5,6,12,False,False,
+2,Aggressive Fund,ASB KiwiSaver Scheme,Aggressive,0.75,12.64,,5–7,5,7,10,40,False,False,
+3,Aggressive Fund,MAS KiwiSaver Scheme,Aggressive,0.97,12.18,6.08,5–7,5,7,10,40,False,True,2021
+4,AMP Aggressive Fund,AMP KiwiSaver Scheme,Aggressive,0.85,13.26,6.7,5–7,5,7,10,40,False,True,2013
+5,AMP Aggressive Fund (lifesteps),AMP KiwiSaver Scheme,Aggressive,0.85,13.26,6.7,5–7,5,7,10,40,False,True,2017
+6,AMP Australasian Shares Fund,AMP KiwiSaver Scheme,Aggressive,0.83,4.81,1.33,5–7,5,7,10,40,False,True,2016
+7,AMP Balanced Fund,AMP KiwiSaver Scheme,Balanced,0.85,8.96,4.55,3–4,3,4,4,9,False,True,2013
+8,AMP Balanced Fund (lifesteps),AMP KiwiSaver Scheme,Balanced,0.85,8.96,4.55,3–4,3,4,4,9,False,True,2017
+9,AMP Balanced Fund No. 2,AMP KiwiSaver Scheme,Balanced,0.85,9.0,4.54,3–4,3,4,4,9,False,True,2021
+10,AMP Cash Fund,AMP KiwiSaver Scheme,Defensive,0.65,1.84,2.17,1–2,1,2,0,3,False,True,2016
+11,AMP Conservative Fund,AMP KiwiSaver Scheme,Conservative,0.84,4.55,2.28,2–3,2,3,1,4,False,True,2013
+12,AMP Conservative Fund (lifesteps),AMP KiwiSaver Scheme,Conservative,0.84,4.55,2.28,2–3,2,3,1,4,False,True,2017
+13,AMP Defensive Conservative Fund,AMP KiwiSaver Scheme,Conservative,0.49,4.14,2.12,2–3,2,3,1,4,False,True,2021
+14,AMP Global Fixed Interest Fund,AMP KiwiSaver Scheme,Defensive,0.84,0.69,-0.54,1–2,1,2,0,3,False,True,2021
+15,AMP Growth Fund,AMP KiwiSaver Scheme,Growth,0.85,11.31,5.9,4–5,4,5,6,12,False,True,2013
+16,AMP Growth Fund (lifesteps),AMP KiwiSaver Scheme,Growth,0.85,11.31,5.9,4–5,4,5,6,12,False,True,2017
+17,AMP International Shares Fund,AMP KiwiSaver Scheme,Aggressive,0.85,14.95,9.88,5–7,5,7,10,40,False,True,2016
+18,AMP Moderate Balanced Fund,AMP KiwiSaver Scheme,Balanced,0.84,7.87,3.78,3–4,3,4,4,9,False,True,2013
+19,AMP Moderate Balanced Fund (lifesteps),AMP KiwiSaver Scheme,Balanced,0.84,7.87,3.78,3–4,3,4,4,9,False,True,2017
+20,AMP Moderate Fund,AMP KiwiSaver Scheme,Balanced,0.84,6.69,3.11,3–4,3,4,4,9,False,True,2013
+21,AMP Moderate Fund (lifesteps),AMP KiwiSaver Scheme,Balanced,0.84,6.69,3.11,3–4,3,4,4,9,False,True,2017
+22,AMP NZ Fixed Interest Fund,AMP KiwiSaver Scheme,Defensive,0.86,2.22,-0.19,1–2,1,2,0,3,False,True,2021
+23,Asia Pacific Fund,Superlife KiwiSaver Scheme,Aggressive,0.69,33.27,8.69,5–7,5,7,10,40,False,True,2019
+24,Asset Class Balanced Fund,Booster KiwiSaver Scheme,Balanced,1.32,8.23,3.84,3–4,3,4,4,9,False,True,2017
+25,Asset Class Conservative Fund,Booster KiwiSaver Scheme,Conservative,1.24,4.73,1.72,2–3,2,3,1,4,False,True,2016
+26,Asset Class Growth Fund,Booster KiwiSaver Scheme,Growth,1.37,12.15,6.36,4–5,4,5,6,12,False,True,2016
+27,Aurora Balanced Strategy,Aurora KiwiSaver Scheme,Balanced,1.51,5.53,,3–4,3,4,4,9,False,False,
+28,Aurora Conservative Fund,Aurora KiwiSaver Scheme,Conservative,1.37,3.57,,2–3,2,3,1,4,False,True,2021
+29,Aurora First Home Buyer Strategy,Aurora KiwiSaver Scheme,Conservative,1.16,3.2,,2–3,2,3,1,4,False,False,
+30,Aurora Growth Fund,Aurora KiwiSaver Scheme,Growth,1.61,6.83,,4–5,4,5,6,12,False,True,2021
+31,Aurora Liquidity Fund,Aurora KiwiSaver Scheme,Defensive,0.52,2.09,,1–2,1,2,0,3,False,False,
+32,Aurora Retirementplus Age 50,Aurora KiwiSaver Scheme,Growth,1.61,6.83,,4–5,4,5,6,12,False,True,2022
+33,Aurora Retirementplus Age 65,Aurora KiwiSaver Scheme,Balanced,1.5,5.2,,3–4,3,4,4,9,False,True,2021
+34,Aurora Retirementplus Age 75,Aurora KiwiSaver Scheme,Conservative,1.41,4.06,,2–3,2,3,1,4,False,True,2022
+35,Australasian Fund,Generate KiwiSaver Scheme,Aggressive,1.31,,,5–7,5,7,10,40,False,False,
+36,Australasian Property Fund,Oneanswer KiwiSaver Scheme,Aggressive,1.01,2.0,-4.15,5–7,5,7,10,40,False,True,2013
+37,Australasian Share Fund,Oneanswer KiwiSaver Scheme,Aggressive,0.99,2.69,0.07,5–7,5,7,10,40,False,True,2013
+38,Australian Dividend Fund,Superlife KiwiSaver Scheme,Aggressive,0.69,27.34,10.02,5–7,5,7,10,40,False,True,2019
+39,Australian Financials Fund,Superlife KiwiSaver Scheme,Aggressive,0.69,25.08,14.01,5–7,5,7,10,40,False,True,2019
+40,Australian Mid Cap Fund,Superlife KiwiSaver Scheme,Aggressive,0.69,18.73,8.84,5–7,5,7,10,40,False,True,2019
+41,Australian Property Fund,Superlife KiwiSaver Scheme,Aggressive,0.69,8.64,2.66,5–7,5,7,10,40,False,True,2019
+42,Australian Resources Fund,Superlife KiwiSaver Scheme,Aggressive,0.69,59.02,12.74,5–7,5,7,10,40,False,True,2019
+43,Australian Shares Fund,Superlife KiwiSaver Scheme,Aggressive,0.69,15.12,8.56,5–7,5,7,10,40,False,True,2016
+44,Australian Top 20 Fund,Superlife KiwiSaver Scheme,Aggressive,0.69,25.2,10.12,5–7,5,7,10,40,False,True,2019
+45,Automatic Fund (age 20),Supereasy KiwiSaver Superannuation Scheme,Aggressive,0.5,12.19,7.98,5–7,5,7,10,40,False,False,
+46,Automatic Fund (age 40),Supereasy KiwiSaver Superannuation Scheme,Growth,0.5,9.37,5.36,4–5,4,5,6,12,False,False,
+47,Automatic Fund (age 60),Supereasy KiwiSaver Superannuation Scheme,Balanced,0.5,6.82,3.02,3–4,3,4,4,9,False,False,
+48,Automatic Fund (age 80),Supereasy KiwiSaver Superannuation Scheme,Conservative,0.5,4.4,1.98,2–3,2,3,1,4,False,False,
+49,Balanced Fund,Fisher Funds KiwiSaver Plan,Balanced,1.04,2.9,3.58,3–4,3,4,4,9,False,False,
+50,Balanced Fund,Christian KiwiSaver Scheme,Balanced,1.35,5.63,4.84,3–4,3,4,4,9,True,False,
+51,Balanced Fund,Supereasy KiwiSaver Superannuation Scheme,Balanced,0.5,7.31,3.96,3–4,3,4,4,9,False,False,
+52,Balanced Fund,Westpac KiwiSaver Scheme,Balanced,0.5,8.66,4.03,3–4,3,4,4,9,False,True,2013
+53,Balanced Fund,Fisher Funds Two KiwiSaver Scheme,Balanced,0.95,2.29,2.94,3–4,3,4,4,9,False,True,2013
+54,Balanced Fund,JMI Wealth KiwiSaver Scheme,Balanced,1.35,7.11,3.83,3–4,3,4,4,9,False,False,
+55,Balanced Fund,Generate KiwiSaver Scheme,Balanced,1.36,6.23,,3–4,3,4,4,9,False,False,
+56,Balanced Fund,Evidential KiwiSaver Scheme,Balanced,0.7,,,3–4,3,4,4,9,False,False,
+57,Balanced Fund,NZ Funds KiwiSaver Scheme,Balanced,0.0,5.38,,3–4,3,4,4,9,False,True,2021
+58,Balanced Fund,ANZ KiwiSaver Scheme,Balanced,0.88,6.53,2.98,3–4,3,4,4,9,False,True,2013
+59,Balanced Fund,ASB KiwiSaver Scheme,Balanced,0.65,9.09,4.93,3–4,3,4,4,9,False,True,2013
+60,Balanced Fund,Oneanswer KiwiSaver Scheme,Balanced,0.88,6.53,2.98,3–4,3,4,4,9,False,True,2013
+61,Balanced Fund,Booster KiwiSaver Scheme,Balanced,1.31,6.17,3.62,3–4,3,4,4,9,False,True,2016
+62,Balanced Fund,New Zealand Defence Force KiwiSaver Scheme,Balanced,0.8,8.31,4.0,3–4,3,4,4,9,False,True,2015
+63,Balanced Fund,ANZ Default KiwiSaver Scheme,Balanced,0.88,6.53,2.98,3–4,3,4,4,9,False,True,2013
+64,Balanced Fund,Simplicity KiwiSaver Scheme,Balanced,0.25,7.8,4.35,3–4,3,4,4,9,False,True,2016
+65,Balanced Fund,MAS KiwiSaver Scheme,Balanced,0.98,8.23,4.27,3–4,3,4,4,9,False,True,2021
+66,Balanced Growth Fund,Oneanswer KiwiSaver Scheme,Growth,0.92,8.03,3.71,4–5,4,5,6,12,False,True,2013
+67,Balanced Growth Fund,ANZ KiwiSaver Scheme,Growth,0.92,8.04,3.71,4–5,4,5,6,12,False,True,2013
+68,Balanced Growth Fund,ANZ Default KiwiSaver Scheme,Growth,0.92,8.03,3.71,4–5,4,5,6,12,False,True,2013
+69,Balanced Portfolio,Maritime KiwiSaver Scheme,Balanced,0.71,5.06,4.68,3–4,3,4,4,9,False,False,
+70,Balanced Strategy,Koura KiwiSaver Scheme,Balanced,1.03,9.44,,3–4,3,4,4,9,True,False,
+71,Balanced Strategy,Fisher Funds KiwiSaver Scheme,Balanced,1.0,2.34,2.89,3–4,3,4,4,9,False,True,2016
+72,Bcf KiwiSaver Scheme,Bcf KiwiSaver Scheme,Defensive,0.98,2.73,2.46,1–2,1,2,0,3,False,False,
+73,Bitcoin Fund,Koura KiwiSaver Scheme,Aggressive,1.2,-19.79,,5–7,5,7,10,40,True,False,
+74,BNZ KiwiSaver Balanced Fund,BNZ KiwiSaver Scheme,Balanced,0.45,7.8,4.43,3–4,3,4,4,9,False,True,2016
+75,BNZ KiwiSaver Cash Fund,BNZ KiwiSaver Scheme,Defensive,0.3,2.28,2.53,1–2,1,2,0,3,False,True,2016
+76,BNZ KiwiSaver Conservative Fund,BNZ KiwiSaver Scheme,Conservative,0.45,3.73,2.09,2–3,2,3,1,4,False,True,2016
+77,BNZ KiwiSaver Default Fund,BNZ KiwiSaver Scheme,Balanced,0.35,8.4,,3–4,3,4,4,9,False,True,2021
+78,BNZ KiwiSaver First Home Buyer Fund,BNZ KiwiSaver Scheme,Conservative,0.45,3.41,2.62,2–3,2,3,1,4,False,True,2016
+79,BNZ KiwiSaver Growth Fund,BNZ KiwiSaver Scheme,Growth,0.45,9.65,5.62,4–5,4,5,6,12,False,True,2016
+80,BNZ KiwiSaver High Growth Fund,BNZ KiwiSaver Scheme,Aggressive,0.45,11.42,,5–7,5,7,10,40,False,False,
+81,BNZ KiwiSaver Moderate Fund,BNZ KiwiSaver Scheme,Balanced,0.45,5.85,3.32,3–4,3,4,4,9,False,True,2016
+82,Capital Guaranteed Fund,Booster KiwiSaver Scheme,Conservative,1.03,2.79,2.63,2–3,2,3,1,4,False,True,2016
+83,Cash Fund,Fisher Funds KiwiSaver Plan,Defensive,0.45,2.46,2.68,1–2,1,2,0,3,False,False,
+84,Cash Fund,Westpac KiwiSaver Scheme,Defensive,0.25,2.45,2.67,1–2,1,2,0,3,False,True,2013
+85,Cash Fund,Koura KiwiSaver Scheme,Defensive,0.73,1.74,2.2,1–2,1,2,0,3,True,False,
+86,Cash Fund,ANZ KiwiSaver Scheme,Defensive,0.22,2.35,2.6,1–2,1,2,0,3,False,True,2013
+87,Cash Fund,Oneanswer KiwiSaver Scheme,Defensive,0.22,2.35,2.6,1–2,1,2,0,3,False,True,2013
+88,Cash Fund,New Zealand Defence Force KiwiSaver Scheme,Defensive,0.43,2.06,2.34,1–2,1,2,0,3,False,True,2015
+89,Cash Fund,Mercer KiwiSaver Scheme,Defensive,0.32,2.16,2.44,1–2,1,2,0,3,False,True,2021
+90,Cash Fund,ANZ Default KiwiSaver Scheme,Defensive,0.22,2.35,2.59,1–2,1,2,0,3,False,True,2013
+91,Cash Fund,MAS KiwiSaver Scheme,Defensive,0.25,2.76,2.62,1–2,1,2,0,3,False,True,2021
+92,Cashplus Fund,Fisher Funds KiwiSaver Plan,Defensive,0.68,2.27,1.83,1–2,1,2,0,3,False,False,
+93,Cashplus Fund,Generate KiwiSaver Scheme,Defensive,0.55,2.5,,1–2,1,2,0,3,False,False,
+94,Castle Point 5 Oceans Fund,Superlife KiwiSaver Scheme,Aggressive,1.38,7.76,3.51,5–7,5,7,10,40,False,True,2020
+95,Clean Energy Fund,Koura KiwiSaver Scheme,Aggressive,1.2,57.37,,5–7,5,7,10,40,True,False,
+96,Conservative Balanced Fund,Oneanswer KiwiSaver Scheme,Conservative,0.73,4.85,2.27,2–3,2,3,1,4,False,True,2013
+97,Conservative Balanced Fund,ANZ KiwiSaver Scheme,Conservative,0.73,4.86,2.27,2–3,2,3,1,4,False,True,2013
+98,Conservative Balanced Fund,ANZ Default KiwiSaver Scheme,Conservative,0.73,4.86,2.27,2–3,2,3,1,4,False,True,2013
+99,Conservative Fund,Supereasy KiwiSaver Superannuation Scheme,Conservative,0.5,4.41,2.27,2–3,2,3,1,4,False,False,
+100,Conservative Fund,Westpac KiwiSaver Scheme,Conservative,0.4,4.83,2.42,2–3,2,3,1,4,False,True,2013
+101,Conservative Fund,Fisher Funds Two KiwiSaver Scheme,Conservative,0.88,2.77,1.99,2–3,2,3,1,4,False,True,2013
+102,Conservative Fund,JMI Wealth KiwiSaver Scheme,Conservative,1.22,4.18,2.14,2–3,2,3,1,4,False,False,
+103,Conservative Fund,Generate KiwiSaver Scheme,Conservative,1.2,3.26,,2–3,2,3,1,4,False,True,2013
+104,Conservative Fund,Oneanswer KiwiSaver Scheme,Conservative,0.6,3.49,1.65,2–3,2,3,1,4,False,True,2013
+105,Conservative Fund,ANZ KiwiSaver Scheme,Conservative,0.6,3.49,1.65,2–3,2,3,1,4,False,True,2013
+106,Conservative Fund,ASB KiwiSaver Scheme,Conservative,0.4,5.42,2.61,2–3,2,3,1,4,False,True,2013
+107,Conservative Fund,Booster KiwiSaver Scheme,Conservative,0.38,3.82,2.2,2–3,2,3,1,4,False,True,2021
+108,Conservative Fund,New Zealand Defence Force KiwiSaver Scheme,Conservative,0.67,3.96,2.16,2–3,2,3,1,4,False,True,2015
+109,Conservative Fund,Fisher Funds KiwiSaver Scheme,Conservative,0.93,2.83,1.98,2–3,2,3,1,4,False,True,2013
+110,Conservative Fund,ANZ Default KiwiSaver Scheme,Conservative,0.42,3.56,2.25,2–3,2,3,1,4,False,True,2013
+111,Conservative Fund,MAS KiwiSaver Scheme,Conservative,0.84,3.82,1.95,2–3,2,3,1,4,False,True,2021
+112,Conservative Fund,Simplicity KiwiSaver Scheme,Conservative,0.25,4.02,1.8,2–3,2,3,1,4,False,True,2016
+113,Conservative Portfolio,Maritime KiwiSaver Scheme,Conservative,0.61,2.92,2.1,2–3,2,3,1,4,False,False,
+114,Core Conservative Fund,Fisher Funds KiwiSaver Plan,Conservative,0.51,2.69,2.79,2–3,2,3,1,4,False,False,
+115,Cash Enhanced Fund,Fisher Funds Two KiwiSaver Scheme,Conservative,0.52,2.59,2.24,2–3,2,3,1,4,False,True,2013
+116,Conservative Fund,Fisher Funds KiwiSaver Plan,Conservative,0.87,3.38,2.44,2–3,2,3,1,4,False,False,
+117,Conservative Strategy,Koura KiwiSaver Scheme,Conservative,0.85,5.22,,2–3,2,3,1,4,True,False,
+118,Default Balanced Fund,Westpac KiwiSaver Scheme,Balanced,0.4,7.74,,3–4,3,4,4,9,False,True,2021
+119,Default Fund,Simplicity KiwiSaver Scheme,Balanced,0.25,7.61,,3–4,3,4,4,9,False,True,2022
+120,Default Saver Fund,Booster KiwiSaver Scheme,Balanced,0.35,7.28,,3–4,3,4,4,9,False,True,2016
+121,Defensive Conservative Fund,Westpac KiwiSaver Scheme,Conservative,0.4,4.31,2.3,2–3,2,3,1,4,False,True,2021
+122,Defensive Fund,Simplicity KiwiSaver Scheme,Defensive,0.25,2.49,,1–2,1,2,0,3,False,False,
+123,Default Fund,Fisher Funds KiwiSaver Plan,Balanced,0.37,8.74,,3–4,3,4,4,9,False,False,
+124,Emerging Markets Equities Fund,Koura KiwiSaver Scheme,Aggressive,0.73,26.09,6.77,5–7,5,7,10,40,True,True,2019
+125,Emerging Markets Fund,Superlife KiwiSaver Scheme,Aggressive,0.83,18.45,5.83,5–7,5,7,10,40,False,True,2016
+126,Enhanced Cash Fund,Booster KiwiSaver Scheme,Defensive,0.87,1.98,2.09,1–2,1,2,0,3,False,True,2020
+127,Equity Fund,Fisher Funds Two KiwiSaver Scheme,Growth,1.16,2.55,4.32,4–5,4,5,6,12,False,True,2013
+128,Ethica Fund,Superlife KiwiSaver Scheme,Balanced,0.8,7.49,4.3,3–4,3,4,4,9,True,True,2020
+129,Europe Fund,Superlife KiwiSaver Scheme,Aggressive,0.69,15.29,10.66,5–7,5,7,10,40,False,True,2019
+130,Fixed Interest Fund,Koura KiwiSaver Scheme,Defensive,0.73,2.42,1.43,1–2,1,2,0,3,True,False,
+131,Focused Growth Fund,Generate KiwiSaver Scheme,Aggressive,1.39,8.77,6.41,5–7,5,7,10,40,False,True,2013
+132,Geared Growth Fund,Booster KiwiSaver Scheme,Aggressive,1.5,10.85,6.11,5–7,5,7,10,40,False,True,2016
+133,Glidepath Age 25,Fisher Funds Two KiwiSaver Scheme,Growth,1.16,2.55,4.32,4–5,4,5,6,12,False,True,2016
+134,Glidepath Age 25,Fisher Funds KiwiSaver Plan,Growth,1.23,1.65,,4–5,4,5,6,12,False,False,
+135,Glidepath Age 30,Fisher Funds KiwiSaver Scheme,Growth,1.05,1.95,3.49,4–5,4,5,6,12,False,True,2017
+136,Glidepath Age 40,Fisher Funds Two KiwiSaver Scheme,Growth,1.09,2.21,4.23,4–5,4,5,6,12,False,True,2016
+137,Glidepath Age 50,Fisher Funds KiwiSaver Scheme,Growth,1.03,2.09,3.3,4–5,4,5,6,12,False,True,2017
+138,Glidepath Age 55,Fisher Funds Two KiwiSaver Scheme,Balanced,0.96,2.26,3.08,3–4,3,4,4,9,False,True,2016
+139,Glidepath Age 55,Fisher Funds KiwiSaver Plan,Balanced,1.11,2.89,3.66,3–4,3,4,4,9,False,False,
+140,Glidepath Age 60,Fisher Funds KiwiSaver Scheme,Balanced,0.98,2.49,2.67,3–4,3,4,4,9,False,True,2017
+141,Glidepath Age 65,Fisher Funds KiwiSaver Plan,Conservative,0.91,3.3,,2–3,2,3,1,4,False,False,
+142,Glidepath Age 65,Fisher Funds Two KiwiSaver Scheme,Conservative,0.89,2.7,2.16,2–3,2,3,1,4,False,True,2016
+143,Glidepath Age 75,Fisher Funds Two KiwiSaver Scheme,Conservative,0.86,2.73,2.02,2–3,2,3,1,4,False,True,2016
+144,Glidepath Age 75,Fisher Funds KiwiSaver Scheme,Conservative,0.94,2.76,2.13,2–3,2,3,1,4,False,True,2017
+145,Global Aggregate Bond Fund,Superlife KiwiSaver Scheme,Defensive,0.69,1.03,-1.53,1–2,1,2,0,3,False,True,2020
+146,Global Equities Fund,MAS KiwiSaver Scheme,Aggressive,0.98,12.57,6.66,5–7,5,7,10,40,False,True,2021
+147,Global Fund,Generate KiwiSaver Scheme,Aggressive,1.3,,,5–7,5,7,10,40,False,False,
+148,Global Property Fund,Superlife KiwiSaver Scheme,Aggressive,0.68,5.26,-0.07,5–7,5,7,10,40,False,True,2019
+149,Global Select Balanced Growth Fund,AMP KiwiSaver Scheme,Growth,1.18,11.15,4.67,4–5,4,5,6,12,False,False,
+150,Global Select Conservative Fund,AMP KiwiSaver Scheme,Conservative,1.08,4.88,1.95,2–3,2,3,1,4,False,False,
+151,Global Select Growth Fund,AMP KiwiSaver Scheme,Growth,1.27,12.99,5.49,4–5,4,5,6,12,False,False,
+152,Goalsgetter Amova Ark Disruptive Innovation Fund,Goalsgetter KiwiSaver Scheme,Aggressive,1.55,19.68,-7.83,5–7,5,7,10,40,False,False,
+153,Goalsgetter Amova Balanced Fund,Goalsgetter KiwiSaver Scheme,Balanced,1.24,3.21,2.06,3–4,3,4,4,9,False,False,
+154,Goalsgetter Amova Conservative Fund,Goalsgetter KiwiSaver Scheme,Conservative,1.0,2.53,1.59,2–3,2,3,1,4,False,False,
+155,Goalsgetter Amova Global Shares Fund,Goalsgetter KiwiSaver Scheme,Aggressive,1.45,-4.76,6.69,5–7,5,7,10,40,False,False,
+156,Goalsgetter Amova Growth Fund,Goalsgetter KiwiSaver Scheme,Growth,1.39,3.19,2.42,4–5,4,5,6,12,False,False,
+157,Goalsgetter Amova High Growth Fund,Goalsgetter KiwiSaver Scheme,Aggressive,1.45,,,5–7,5,7,10,40,False,False,
+158,Goalsgetter Amova NZ Cash Fund,Goalsgetter KiwiSaver Scheme,Defensive,0.5,2.34,2.64,1–2,1,2,0,3,False,False,
+159,Goalsgetter Amova NZ Corporate Bond Fund,Goalsgetter KiwiSaver Scheme,Defensive,0.8,2.54,1.6,1–2,1,2,0,3,False,False,
+160,Goalsgetter Amova SRI Equity Fund,Goalsgetter KiwiSaver Scheme,Aggressive,1.25,2.94,0.83,5–7,5,7,10,40,True,False,
+161,Goalsgetter Generate Balanced Fund,Goalsgetter KiwiSaver Scheme,Balanced,1.59,3.68,,3–4,3,4,4,9,False,False,
+162,Goalsgetter Generate Focused Growth Fund,Goalsgetter KiwiSaver Scheme,Aggressive,1.61,5.85,,5–7,5,7,10,40,False,False,
+163,Goalsgetter Generate Thematic Fund,Goalsgetter KiwiSaver Scheme,Aggressive,1.55,6.49,,5–7,5,7,10,40,False,False,
+164,Goalsgetter Harbour Balanced Growth Fund,Goalsgetter KiwiSaver Scheme,Growth,1.34,6.72,,4–5,4,5,6,12,False,False,
+165,Goalsgetter Harbour Sustainable Impact Fund,Goalsgetter KiwiSaver Scheme,Balanced,1.6,-2.38,,3–4,3,4,4,9,True,False,
+166,Goalsgetter Milford Active Growth Fund,Goalsgetter KiwiSaver Scheme,Growth,1.35,6.07,,4–5,4,5,6,12,False,False,
+167,Goalsgetter Milford Aggressive Fund,Goalsgetter KiwiSaver Scheme,Aggressive,1.45,,,5–7,5,7,10,40,False,False,
+168,Goalsgetter Milford Balanced Fund,Goalsgetter KiwiSaver Scheme,Balanced,1.35,3.13,,3–4,3,4,4,9,False,False,
+169,Goalsgetter Milford Conservative Fund,Goalsgetter KiwiSaver Scheme,Conservative,1.15,1.03,,2–3,2,3,1,4,False,False,
+170,Goalsgetter Pathfinder Ethical Growth Fund,Goalsgetter KiwiSaver Scheme,Growth,1.61,6.65,,4–5,4,5,6,12,True,False,
+171,Goalsgetter Salt Capital Growth Fund,Goalsgetter KiwiSaver Scheme,Growth,1.4,-0.38,,4–5,4,5,6,12,False,False,
+172,Growth Fund,Christian KiwiSaver Scheme,Growth,1.5,7.56,6.88,4–5,4,5,6,12,True,False,
+173,Growth Fund,Supereasy KiwiSaver Superannuation Scheme,Growth,0.5,8.91,4.83,4–5,4,5,6,12,False,False,
+174,Growth Fund,Westpac KiwiSaver Scheme,Growth,0.55,10.67,4.91,4–5,4,5,6,12,False,True,2013
+175,Growth Fund,Fisher Funds Two KiwiSaver Scheme,Growth,1.06,2.05,4.16,4–5,4,5,6,12,False,True,2013
+176,Growth Fund,JMI Wealth KiwiSaver Scheme,Growth,1.41,7.12,4.97,4–5,4,5,6,12,False,False,
+177,Growth Fund,Generate KiwiSaver Scheme,Growth,1.37,7.18,5.52,4–5,4,5,6,12,False,True,2013
+178,Growth Fund,ANZ KiwiSaver Scheme,Growth,0.96,9.61,4.46,4–5,4,5,6,12,False,True,2013
+179,Growth Fund,Oneanswer KiwiSaver Scheme,Growth,0.96,9.61,4.45,4–5,4,5,6,12,False,True,2013
+180,Growth Fund,Evidential KiwiSaver Scheme,Growth,0.75,,,4–5,4,5,6,12,False,False,
+181,Growth Fund,ASB KiwiSaver Scheme,Growth,0.7,11.16,6.18,4–5,4,5,6,12,False,True,2013
+182,Growth Fund,Booster KiwiSaver Scheme,Growth,1.35,7.75,4.64,4–5,4,5,6,12,False,True,2021
+183,Growth Fund,Fisher Funds KiwiSaver Scheme,Growth,1.05,1.95,3.49,4–5,4,5,6,12,False,True,2013
+184,Growth Fund,New Zealand Defence Force KiwiSaver Scheme,Growth,0.88,9.96,5.07,4–5,4,5,6,12,False,True,2015
+185,Growth Fund,ANZ Default KiwiSaver Scheme,Growth,0.96,9.61,4.45,4–5,4,5,6,12,False,True,2013
+186,Growth Fund,MAS KiwiSaver Scheme,Growth,0.98,10.51,5.46,4–5,4,5,6,12,False,True,2021
+187,Growth Fund,Simplicity KiwiSaver Scheme,Growth,0.25,10.06,6.01,4–5,4,5,6,12,False,True,2016
+188,Growth Portfolio,Maritime KiwiSaver Scheme,Balanced,0.76,6.03,,3–4,3,4,4,9,False,False,
+189,Growth Strategy,Koura KiwiSaver Scheme,Growth,1.12,11.87,,4–5,4,5,6,12,True,False,
+190,Growth Strategy,NZ Funds KiwiSaver Scheme,Aggressive,2.11,7.81,-0.85,5–7,5,7,10,40,False,True,2013
+191,Glidepath Age 40,Fisher Funds KiwiSaver Plan,Growth,1.21,2.45,,4–5,4,5,6,12,False,False,
+192,Glidepath Age 75,Fisher Funds KiwiSaver Plan,Conservative,0.84,3.3,,2–3,2,3,1,4,False,False,
+193,Growth Fund,Fisher Funds KiwiSaver Plan,Growth,1.13,2.82,4.27,4–5,4,5,6,12,False,False,
+194,High Growth Fund,Westpac KiwiSaver Scheme,Aggressive,0.7,13.11,,5–7,5,7,10,40,False,False,
+195,High Growth Fund,Evidential KiwiSaver Scheme,Aggressive,0.8,,,5–7,5,7,10,40,False,False,
+196,High Growth Fund,ANZ KiwiSaver Scheme,Aggressive,0.95,11.09,,5–7,5,7,10,40,False,False,
+197,High Growth Fund,Oneanswer KiwiSaver Scheme,Aggressive,0.95,11.09,,5–7,5,7,10,40,False,False,
+198,High Growth Fund,Booster KiwiSaver Scheme,Aggressive,1.41,9.39,5.71,5–7,5,7,10,40,False,True,2016
+199,High Growth Fund,New Zealand Defence Force KiwiSaver Scheme,Aggressive,0.94,12.11,6.08,5–7,5,7,10,40,False,True,2015
+200,High Growth Fund,ANZ Default KiwiSaver Scheme,Aggressive,0.95,11.08,,5–7,5,7,10,40,False,False,
+201,High Growth Fund,Simplicity KiwiSaver Scheme,Aggressive,0.25,11.74,,5–7,5,7,10,40,False,False,
+202,Income Fund,Christian KiwiSaver Scheme,Defensive,0.8,1.84,0.95,1–2,1,2,0,3,True,False,
+203,Income Strategy,NZ Funds KiwiSaver Scheme,Defensive,1.22,1.26,0.89,1–2,1,2,0,3,False,True,2013
+204,Inflation Strategy,NZ Funds KiwiSaver Scheme,Growth,1.52,7.49,-2.29,4–5,4,5,6,12,False,True,2013
+205,International Fixed Interest Fund,Oneanswer KiwiSaver Scheme,Defensive,0.49,0.99,-0.57,1–2,1,2,0,3,False,True,2013
+206,International Property Fund,Oneanswer KiwiSaver Scheme,Aggressive,0.99,6.86,3.11,5–7,5,7,10,40,False,True,2013
+207,International Share Fund,Oneanswer KiwiSaver Scheme,Aggressive,0.96,14.77,8.34,5–7,5,7,10,40,False,True,2013
+208,Investnow Antipodes Global Value Fund,Investnow KiwiSaver Scheme,Aggressive,1.08,28.03,,5–7,5,7,10,40,False,False,
+209,Investnow Castle Point 5 Oceans Fund,Investnow KiwiSaver Scheme,Balanced,1.18,9.09,3.85,3–4,3,4,4,9,False,True,2020
+210,Investnow Castle Point Trans-tasman Fund,Investnow KiwiSaver Scheme,Aggressive,1.08,3.17,-0.91,5–7,5,7,10,40,False,True,2020
+211,Investnow Clarity Global Shares Fund,Investnow KiwiSaver Scheme,Aggressive,1.07,20.86,13.56,5–7,5,7,10,40,False,True,2020
+212,Investnow Fisher Funds Conservative Fund,Investnow KiwiSaver Scheme,Conservative,0.93,2.69,,2–3,2,3,1,4,False,True,2022
+213,Investnow Fisher Funds Growth Fund,Investnow KiwiSaver Scheme,Growth,1.02,1.16,,4–5,4,5,6,12,False,True,2021
+214,Investnow Foundation Series Balanced Fund,Investnow KiwiSaver Scheme,Balanced,0.36,6.48,4.77,3–4,3,4,4,9,False,True,2021
+215,Investnow Foundation Series Global ESG Fund,Investnow KiwiSaver Scheme,Aggressive,0.1,,,5–7,5,7,10,40,False,False,
+216,Investnow Foundation Series Growth Fund,Investnow KiwiSaver Scheme,Growth,0.38,8.08,6.31,4–5,4,5,6,12,False,True,2021
+217,Investnow Foundation Series Hedged Total World Fund,Investnow KiwiSaver Scheme,Aggressive,0.07,16.8,,5–7,5,7,10,40,False,False,
+218,Investnow Foundation Series Hedged US 500 Fund,Investnow KiwiSaver Scheme,Aggressive,0.03,14.2,,5–7,5,7,10,40,False,False,
+219,Investnow Foundation Series High Growth Fund,Investnow KiwiSaver Scheme,Aggressive,0.37,,,5–7,5,7,10,40,False,False,
+220,Investnow Foundation Series Nasdaq-100 Fund,Investnow KiwiSaver Scheme,Aggressive,0.15,,,5–7,5,7,10,40,False,False,
+221,Investnow Foundation Series Total World Fund,Investnow KiwiSaver Scheme,Aggressive,0.07,18.95,,5–7,5,7,10,40,False,False,
+222,Investnow Foundation Series US 500 Fund,Investnow KiwiSaver Scheme,Aggressive,0.03,15.2,,5–7,5,7,10,40,False,False,
+223,Investnow Foundation Series US Dividend Equity Fund,Investnow KiwiSaver Scheme,Aggressive,0.06,,,5–7,5,7,10,40,False,False,
+224,Investnow Generate Focused Growth Fund,Investnow KiwiSaver Scheme,Aggressive,1.39,8.76,,5–7,5,7,10,40,False,False,
+225,Investnow Harbour Australasian Equity Focus Fund,Investnow KiwiSaver Scheme,Aggressive,1.21,-11.1,-1.44,5–7,5,7,10,40,False,True,2020
+226,Investnow Harbour Balanced Growth Fund,Investnow KiwiSaver Scheme,Growth,1.04,10.84,,4–5,4,5,6,12,False,False,
+227,Investnow Harbour NZ Core Fixed Interest Fund,Investnow KiwiSaver Scheme,Defensive,0.66,2.9,1.12,1–2,1,2,0,3,False,True,2020
+228,Investnow Harbour T. Rowe Price Global Equity Fund,Investnow KiwiSaver Scheme,Aggressive,1.21,9.99,5.66,5–7,5,7,10,40,False,True,2021
+229,Investnow Hunter Global Fixed Interest Fund,Investnow KiwiSaver Scheme,Defensive,0.54,1.17,0.02,1–2,1,2,0,3,False,True,2020
+230,Investnow Macquarie NZ Cash Fund,Investnow KiwiSaver Scheme,Defensive,0.3,2.17,2.5,1–2,1,2,0,3,False,False,
+231,Investnow Macquarie NZ Fixed Interest Fund,Investnow KiwiSaver Scheme,Defensive,0.61,2.56,0.7,1–2,1,2,0,3,False,False,
+232,Investnow Mercer All Country Global Shares Index Fund,Investnow KiwiSaver Scheme,Aggressive,0.43,15.86,9.51,5–7,5,7,10,40,False,False,
+233,Investnow Mercer Global Listed Real Estate Fund,Investnow KiwiSaver Scheme,Aggressive,1.35,7.18,0.96,5–7,5,7,10,40,False,False,
+234,Investnow Mercer NZ Shares Passive Fund,Investnow KiwiSaver Scheme,Aggressive,0.36,3.99,0.02,5–7,5,7,10,40,False,False,
+235,Investnow Mercer Responsible Balanced Fund,Investnow KiwiSaver Scheme,Balanced,1.27,6.21,3.41,3–4,3,4,4,9,False,False,
+236,Investnow Mercer Responsible Hedged Global Fixed Interest Index Fund,Investnow KiwiSaver Scheme,Defensive,0.44,1.01,-0.57,1–2,1,2,0,3,False,False,
+237,Investnow Milford Active Growth Fund,Investnow KiwiSaver Scheme,Growth,1.05,7.52,,4–5,4,5,6,12,False,True,2021
+238,Investnow Milford Aggressive Fund,Investnow KiwiSaver Scheme,Aggressive,1.15,6.31,,5–7,5,7,10,40,False,False,
+239,Investnow Milford Balanced Fund,Investnow KiwiSaver Scheme,Balanced,1.05,4.17,4.74,3–4,3,4,4,9,False,True,2020
+240,Investnow Milford Conservative Fund,Investnow KiwiSaver Scheme,Conservative,0.87,1.83,2.49,2–3,2,3,1,4,False,True,2020
+241,Investnow Mint Australasian Equity Fund,Investnow KiwiSaver Scheme,Aggressive,1.19,-3.73,-0.3,5–7,5,7,10,40,False,True,2020
+242,Investnow Mint Diversified Growth Fund,Investnow KiwiSaver Scheme,Growth,1.2,-2.73,2.43,4–5,4,5,6,12,False,True,2020
+243,Investnow Mint Diversified Income Fund,Investnow KiwiSaver Scheme,Conservative,0.98,-0.18,1.35,2–3,2,3,1,4,False,True,2020
+244,Investnow Pathfinder Ethical Growth Fund,Investnow KiwiSaver Scheme,Growth,1.34,8.81,,4–5,4,5,6,12,True,True,2021
+245,Investnow Russell Investments Global Fixed Interest Fund,Investnow KiwiSaver Scheme,Defensive,0.58,1.08,-0.34,1–2,1,2,0,3,False,True,2020
+246,Investnow Russell Investments Global Shares Fund,Investnow KiwiSaver Scheme,Aggressive,0.93,17.12,11.07,5–7,5,7,10,40,False,True,2020
+247,Investnow Russell Investments Hedged Global Shares Fund,Investnow KiwiSaver Scheme,Aggressive,0.92,15.72,6.93,5–7,5,7,10,40,False,True,2020
+248,Investnow Russell Investments NZ Fixed Interest Fund,Investnow KiwiSaver Scheme,Defensive,0.49,2.39,0.85,1–2,1,2,0,3,False,True,2020
+249,Investnow Salt Capital Growth Fund,Investnow KiwiSaver Scheme,Growth,1.1,0.18,,4–5,4,5,6,12,False,False,
+250,Investnow Salt Enhanced Property Fund,Investnow KiwiSaver Scheme,Aggressive,1.02,7.34,-1.67,5–7,5,7,10,40,False,True,2020
+251,Investnow Smart Growth Fund,Investnow KiwiSaver Scheme,Growth,0.51,10.14,,4–5,4,5,6,12,False,False,
+252,Investnow Te Ahumairangi Global Equity Fund,Investnow KiwiSaver Scheme,Aggressive,0.62,19.26,,5–7,5,7,10,40,False,True,2021
+253,Kernel Australia 100 Fund,Kernel KiwiSaver Plan,Aggressive,0.25,,,5–7,5,7,10,40,False,False,
+254,Kernel Balanced Fund,Kernel KiwiSaver Plan,Balanced,0.25,10.51,,3–4,3,4,4,9,False,False,
+255,Kernel Cash Plus Fund,Kernel KiwiSaver Plan,Defensive,0.25,2.56,,1–2,1,2,0,3,False,False,
+256,Kernel Conservative Fund,Kernel KiwiSaver Plan,Conservative,0.25,,,2–3,2,3,1,4,False,False,
+257,Kernel Emerging Markets Fund,Kernel KiwiSaver Plan,Aggressive,0.45,19.7,,5–7,5,7,10,40,False,False,
+258,Kernel Global ESG (nzd Hedged) Fund,Kernel KiwiSaver Plan,Aggressive,0.25,12.16,,5–7,5,7,10,40,False,False,
+259,Kernel Global ESG Fund,Kernel KiwiSaver Plan,Aggressive,0.25,14.23,,5–7,5,7,10,40,False,False,
+260,Kernel Global Infrastructure (nzd Hedged) Fund,Kernel KiwiSaver Plan,Aggressive,0.25,13.2,,5–7,5,7,10,40,False,False,
+261,Kernel Global Infrastructure Fund,Kernel KiwiSaver Plan,Aggressive,0.25,16.25,,5–7,5,7,10,40,False,False,
+262,Kernel Global Property (nzd Hedged) Fund,Kernel KiwiSaver Plan,Aggressive,0.25,4.0,,5–7,5,7,10,40,False,False,
+263,Kernel High Growth Fund,Kernel KiwiSaver Plan,Aggressive,0.25,15.79,,5–7,5,7,10,40,False,False,
+264,Kernel NZ 20 Fund,Kernel KiwiSaver Plan,Aggressive,0.25,3.01,,5–7,5,7,10,40,False,False,
+265,Kernel NZ 50 ESG Tilted Fund,Kernel KiwiSaver Plan,Aggressive,0.25,4.98,,5–7,5,7,10,40,False,False,
+266,Kernel NZ Bond Fund,Kernel KiwiSaver Plan,Defensive,0.4,3.51,,1–2,1,2,0,3,False,False,
+267,Kernel NZ Commercial Property Fund,Kernel KiwiSaver Plan,Aggressive,0.25,7.45,,5–7,5,7,10,40,False,False,
+268,Kernel NZ Small & Mid Cap Opportunities Fund,Kernel KiwiSaver Plan,Aggressive,0.25,11.94,,5–7,5,7,10,40,False,False,
+269,Kernel S&p 500 (nzd Hedged) Fund,Kernel KiwiSaver Plan,Aggressive,0.25,12.56,,5–7,5,7,10,40,False,False,
+270,Kernel S&p 500 (unhedged) Fund,Kernel KiwiSaver Plan,Aggressive,0.25,15.1,,5–7,5,7,10,40,False,False,
+271,Kernel S&p Global 100 (nzd Hedged) Fund,Kernel KiwiSaver Plan,Aggressive,0.25,21.63,,5–7,5,7,10,40,False,False,
+272,Kernel S&p Global 100 Fund,Kernel KiwiSaver Plan,Aggressive,0.25,24.28,,5–7,5,7,10,40,False,False,
+273,Kernel S&p Global Clean Energy Fund,Kernel KiwiSaver Plan,Aggressive,0.45,85.34,,5–7,5,7,10,40,False,False,
+274,Kernel S&p Global Dividend Aristocrats Fund,Kernel KiwiSaver Plan,Aggressive,0.25,13.8,,5–7,5,7,10,40,False,False,
+275,Kernel US Bond Fund,Kernel KiwiSaver Plan,Defensive,0.3,0.98,,1–2,1,2,0,3,False,False,
+276,Kernel World Ex-us (nzd Hedged) Fund,Kernel KiwiSaver Plan,Aggressive,0.25,,,5–7,5,7,10,40,False,False,
+277,Kernel World Ex-us Fund,Kernel KiwiSaver Plan,Aggressive,0.25,,,5–7,5,7,10,40,False,False,
+278,Life Cycle - Age 0-54,NZ Funds KiwiSaver Scheme,Aggressive,2.01,7.53,-0.83,5–7,5,7,10,40,False,True,2022
+279,Life Cycle - Age 65,NZ Funds KiwiSaver Scheme,Growth,1.67,6.09,-0.69,4–5,4,5,6,12,False,True,2022
+280,Life Cycle - Age 75,NZ Funds KiwiSaver Scheme,Balanced,1.6,5.55,-0.56,3–4,3,4,4,9,False,True,2022
+281,Lifestages Auto Option Age 0 - 49,SBS Wealth KiwiSaver Scheme,Aggressive,1.17,11.77,7.28,5–7,5,7,10,40,False,False,
+282,Lifestages Auto Option Age 50 - 54,SBS Wealth KiwiSaver Scheme,Growth,1.11,9.62,5.9,4–5,4,5,6,12,False,False,
+283,Lifestages Auto Option Age 55 - 59,SBS Wealth KiwiSaver Scheme,Balanced,1.05,7.52,4.51,3–4,3,4,4,9,False,False,
+284,Lifestages Auto Option Age 60 - 64,SBS Wealth KiwiSaver Scheme,Balanced,0.99,5.58,3.14,3–4,3,4,4,9,False,False,
+285,Lifestages Auto Option Age 65+,SBS Wealth KiwiSaver Scheme,Conservative,0.96,4.61,2.42,2–3,2,3,1,4,False,False,
+286,Milford Active Growth Fund,AMP KiwiSaver Scheme,Growth,1.57,7.23,,4–5,4,5,6,12,False,True,2021
+287,Milford Aggressive Fund,AMP KiwiSaver Scheme,Aggressive,1.57,5.98,,5–7,5,7,10,40,False,True,2021
+288,Milford Balanced Fund,AMP KiwiSaver Scheme,Balanced,1.43,4.19,,3–4,3,4,4,9,False,True,2021
+289,Milford Conservative Fund,AMP KiwiSaver Scheme,Conservative,1.33,1.6,,2–3,2,3,1,4,False,True,2021
+290,Milford KiwiSaver Active Growth Fund,Milford KiwiSaver Plan,Growth,1.05,7.64,6.82,4–5,4,5,6,12,False,True,2016
+291,Milford KiwiSaver Aggressive Fund,Milford KiwiSaver Plan,Aggressive,1.15,6.13,6.37,5–7,5,7,10,40,False,True,2019
+292,Milford KiwiSaver Balanced Fund,Milford KiwiSaver Plan,Balanced,1.05,4.58,4.88,3–4,3,4,4,9,False,True,2016
+293,Milford KiwiSaver Cash Fund,Milford KiwiSaver Plan,Defensive,0.2,2.19,2.55,1–2,1,2,0,3,False,True,2020
+294,Milford KiwiSaver Conservative Fund,Milford KiwiSaver Plan,Conservative,0.85,1.89,2.57,2–3,2,3,1,4,False,True,2016
+295,Milford KiwiSaver Moderate Fund,Milford KiwiSaver Plan,Balanced,0.95,3.23,3.63,3–4,3,4,4,9,False,True,2020
+296,Moderate Fund,Westpac KiwiSaver Scheme,Balanced,0.4,6.45,3.14,3–4,3,4,4,9,False,True,2014
+297,Moderate Fund,Generate KiwiSaver Scheme,Balanced,1.26,4.74,3.54,3–4,3,4,4,9,False,False,
+298,Moderate Fund,ASB KiwiSaver Scheme,Balanced,0.6,7.05,3.55,3–4,3,4,4,9,False,True,2013
+299,Moderate Fund,Booster KiwiSaver Scheme,Conservative,1.2,4.14,2.24,2–3,2,3,1,4,False,True,2016
+300,Moderate Fund,New Zealand Defence Force KiwiSaver Scheme,Balanced,0.73,5.98,3.01,3–4,3,4,4,9,False,True,2015
+301,Moderate Fund,MAS KiwiSaver Scheme,Balanced,0.94,5.94,3.07,3–4,3,4,4,9,False,True,2021
+302,New Zealand Equities Fund,Koura KiwiSaver Scheme,Aggressive,0.73,3.08,-0.36,5–7,5,7,10,40,True,True,2019
+303,New Zealand Fixed Interest Fund,Oneanswer KiwiSaver Scheme,Defensive,0.34,2.48,0.72,1–2,1,2,0,3,False,True,2013
+304,NZ Bonds Fund,Superlife KiwiSaver Scheme,Defensive,0.64,2.59,1.45,1–2,1,2,0,3,False,True,2016
+305,NZ Cash Fund,Superlife KiwiSaver Scheme,Defensive,0.62,2.02,2.4,1–2,1,2,0,3,False,True,2016
+306,NZ Cash Fund,ASB KiwiSaver Scheme,Defensive,0.35,2.05,2.44,1–2,1,2,0,3,False,True,2013
+307,NZ Dividend Fund,Superlife KiwiSaver Scheme,Aggressive,0.69,19.37,3.0,5–7,5,7,10,40,False,True,2019
+308,NZ Mid Cap Fund,Superlife KiwiSaver Scheme,Aggressive,0.69,6.62,0.4,5–7,5,7,10,40,False,True,2019
+309,NZ Property Fund,Koura KiwiSaver Scheme,Aggressive,1.2,-1.65,,5–7,5,7,10,40,True,False,
+310,NZ Property Fund,Superlife KiwiSaver Scheme,Aggressive,0.69,6.95,-3.29,5–7,5,7,10,40,False,True,2019
+311,NZ Shares Fund,Superlife KiwiSaver Scheme,Aggressive,0.69,4.1,-0.46,5–7,5,7,10,40,False,True,2016
+312,NZ Top 10 Fund,Superlife KiwiSaver Scheme,Aggressive,0.69,4.08,-0.33,5–7,5,7,10,40,False,True,2019
+313,NZ Top 50 Fund,Superlife KiwiSaver Scheme,Aggressive,0.69,4.06,-0.48,5–7,5,7,10,40,False,True,2019
+314,Overseas Bonds Fund,Superlife KiwiSaver Scheme,Defensive,0.69,0.27,-0.05,1–2,1,2,0,3,False,True,2016
+315,Overseas Non-government Bonds Fund,Superlife KiwiSaver Scheme,Defensive,0.64,1.47,-0.12,1–2,1,2,0,3,False,True,2016
+316,Overseas Shares (currency Hedged) Fund,Superlife KiwiSaver Scheme,Aggressive,0.68,12.74,8.62,5–7,5,7,10,40,False,True,2016
+317,Overseas Shares Fund,Superlife KiwiSaver Scheme,Aggressive,0.68,14.12,11.53,5–7,5,7,10,40,False,True,2016
+318,Pathfinder KiwiSaver Balanced Fund,Pathfinder KiwiSaver Plan,Balanced,1.25,6.72,4.79,3–4,3,4,4,9,False,True,2021
+319,Pathfinder KiwiSaver Conservative Fund,Pathfinder KiwiSaver Plan,Conservative,1.01,2.63,2.7,2–3,2,3,1,4,False,True,2021
+320,Pathfinder KiwiSaver Growth Fund,Pathfinder KiwiSaver Plan,Growth,1.37,8.87,5.56,4–5,4,5,6,12,False,True,2021
+321,Pathfinder KiwiSaver High Growth Fund,Pathfinder KiwiSaver Plan,Growth,1.36,,,4–5,4,5,6,12,False,False,
+322,PIE KiwiSaver Aggressive Fund,PIE KiwiSaver Scheme,Growth,1.19,,,4–5,4,5,6,12,False,False,
+323,PIE KiwiSaver Balanced Fund,PIE KiwiSaver Scheme,Balanced,0.69,12.9,2.12,3–4,3,4,4,9,False,False,
+324,PIE KiwiSaver Conservative Fund,PIE KiwiSaver Scheme,Conservative,0.69,7.09,1.77,2–3,2,3,1,4,False,False,
+325,PIE KiwiSaver Growth Fund,PIE KiwiSaver Scheme,Growth,0.68,16.15,1.64,4–5,4,5,6,12,False,False,
+326,Preservation Fund,Fisher Funds Two KiwiSaver Scheme,Defensive,0.61,2.24,2.28,1–2,1,2,0,3,False,True,2013
+327,Quaystreet Altum Fund,Quaystreet KiwiSaver Scheme,Growth,1.37,17.29,7.14,4–5,4,5,6,12,False,True,2016
+328,Quaystreet Australian Equity Fund,Quaystreet KiwiSaver Scheme,Aggressive,1.37,9.55,7.14,5–7,5,7,10,40,False,True,2016
+329,Quaystreet Balanced Fund,Quaystreet KiwiSaver Scheme,Balanced,1.12,9.47,7.23,3–4,3,4,4,9,False,True,2016
+330,Quaystreet Conservative Fund,Quaystreet KiwiSaver Scheme,Conservative,0.86,4.47,3.36,2–3,2,3,1,4,False,True,2016
+331,Quaystreet Fixed Interest Fund,Quaystreet KiwiSaver Scheme,Defensive,0.86,2.56,1.85,1–2,1,2,0,3,False,True,2016
+332,Quaystreet Growth Fund,Quaystreet KiwiSaver Scheme,Growth,1.37,11.89,8.95,4–5,4,5,6,12,False,True,2016
+333,Quaystreet High Growth Fund,Quaystreet KiwiSaver Scheme,Aggressive,1.41,14.75,,5–7,5,7,10,40,False,False,
+334,Quaystreet Income Fund,Quaystreet KiwiSaver Scheme,Defensive,0.87,3.84,2.9,1–2,1,2,0,3,False,True,2016
+335,Quaystreet International Equity (nzd Hedged) Fund,Quaystreet KiwiSaver Scheme,Aggressive,1.25,15.57,,5–7,5,7,10,40,False,False,
+336,Quaystreet International Equity Fund,Quaystreet KiwiSaver Scheme,Aggressive,1.27,16.73,13.72,5–7,5,7,10,40,False,True,2016
+337,Quaystreet New Zealand Equity Fund,Quaystreet KiwiSaver Scheme,Aggressive,1.37,3.95,0.71,5–7,5,7,10,40,False,True,2016
+338,Quaystreet Socially Responsible Investment Fund,Quaystreet KiwiSaver Scheme,Balanced,1.12,7.3,6.76,3–4,3,4,4,9,True,True,2018
+339,Responsible Balanced Fund,Mercer KiwiSaver Scheme,Balanced,0.75,7.1,4.01,3–4,3,4,4,9,False,False,
+340,Responsible Conservative Fund,Mercer KiwiSaver Scheme,Conservative,0.49,3.77,2.18,2–3,2,3,1,4,False,False,
+341,Responsible Growth Fund,Mercer KiwiSaver Scheme,Growth,0.84,8.62,5.06,4–5,4,5,6,12,False,False,
+342,Responsible High Growth Fund,Mercer KiwiSaver Scheme,Aggressive,0.89,10.1,5.89,5–7,5,7,10,40,False,False,
+343,Responsible Moderate Fund,Mercer KiwiSaver Scheme,Balanced,0.66,5.16,3.03,3–4,3,4,4,9,False,False,
+344,Responsible Shares Fund,Mercer KiwiSaver Scheme,Aggressive,0.95,10.94,5.77,5–7,5,7,10,40,False,False,
+345,Rest of World Equities Fund,Koura KiwiSaver Scheme,Aggressive,0.73,13.7,7.97,5–7,5,7,10,40,True,True,2019
+346,S&p/asx 200 Fund,Superlife KiwiSaver Scheme,Aggressive,0.69,19.2,8.77,5–7,5,7,10,40,False,True,2020
+347,S&p/nzx 50 Fund,Superlife KiwiSaver Scheme,Aggressive,0.69,4.29,-0.22,5–7,5,7,10,40,False,True,2020
+348,S&p/nzx NZ Government Bond Fund,Superlife KiwiSaver Scheme,Defensive,0.64,1.94,-0.14,1–2,1,2,0,3,False,True,2020
+349,SBS Wealth Cash Fund,SBS Wealth KiwiSaver Scheme,Defensive,0.45,,,1–2,1,2,0,3,False,False,
+350,SBS Wealth Focused Growth Fund,SBS Wealth KiwiSaver Scheme,Aggressive,1.2,,,5–7,5,7,10,40,False,False,
+351,SBS Wealth High Growth Fund,SBS Wealth KiwiSaver Scheme,Aggressive,1.17,11.67,7.39,5–7,5,7,10,40,False,False,
+352,SBS Wealth Income Fund,SBS Wealth KiwiSaver Scheme,Defensive,0.87,1.39,0.34,1–2,1,2,0,3,False,False,
+353,Select International Share Fund,Oneanswer KiwiSaver Scheme,Aggressive,0.9,13.32,12.41,5–7,5,7,10,40,False,False,
+354,Shares Fund,New Zealand Defence Force KiwiSaver Scheme,Aggressive,0.96,13.08,6.53,5–7,5,7,10,40,False,True,2015
+355,Sharesies Fisher Funds Growth Fund,Sharesies KiwiSaver Scheme,Growth,1.2,,,4–5,4,5,6,12,False,False,
+356,Sharesies Generate Focused Growth Fund,Sharesies KiwiSaver Scheme,Aggressive,1.31,,,5–7,5,7,10,40,False,False,
+357,Sharesies Milford Aggressive Fund,Sharesies KiwiSaver Scheme,Aggressive,1.15,6.25,,5–7,5,7,10,40,False,False,
+358,Sharesies Milford Balanced Fund,Sharesies KiwiSaver Scheme,,1.07,,,,,,,,False,False,
+359,Sharesies Pathfinder Ethical Growth Fund,Sharesies KiwiSaver Scheme,Growth,1.35,8.87,,4–5,4,5,6,12,True,False,
+360,Sharesies PIE Global Growth 2 Fund,Sharesies KiwiSaver Scheme,Aggressive,1.49,20.83,,5–7,5,7,10,40,False,False,
+361,Sharesies Smartshares Conservative Fund,Sharesies KiwiSaver Scheme,Conservative,0.47,5.05,,2–3,2,3,1,4,False,False,
+362,Sharesies Smartshares Growth Fund,Sharesies KiwiSaver Scheme,Growth,0.51,10.23,,4–5,4,5,6,12,False,False,
+363,Sharesies Total World Share Fund,Sharesies KiwiSaver Scheme,,0.12,,,,,,,,False,False,
+364,Sharesies Us500 Fund,Sharesies KiwiSaver Scheme,Aggressive,0.09,15.85,,5–7,5,7,10,40,False,False,
+365,Shielded Growth Fund,Booster KiwiSaver Scheme,Aggressive,1.41,8.84,5.13,5–7,5,7,10,40,False,True,2018
+366,Socially Responsible Balanced Fund,Booster KiwiSaver Scheme,Balanced,1.33,5.69,4.0,3–4,3,4,4,9,True,True,2021
+367,Socially Responsible Geared Growth Fund,Booster KiwiSaver Scheme,Aggressive,1.46,9.87,,5–7,5,7,10,40,True,False,
+368,Socially Responsible Growth Fund,Booster KiwiSaver Scheme,Growth,1.34,7.12,,4–5,4,5,6,12,True,False,
+369,Socially Responsible High Growth Fund,Booster KiwiSaver Scheme,Aggressive,1.35,8.74,6.76,5–7,5,7,10,40,True,True,2021
+370,Socially Responsible Moderate Fund,Booster KiwiSaver Scheme,Conservative,1.21,4.02,2.34,2–3,2,3,1,4,True,True,2021
+371,Stepping Stones 0-35,Generate KiwiSaver Scheme,Aggressive,1.39,8.77,6.72,5–7,5,7,10,40,False,True,2017
+372,Stepping Stones 36-45,Generate KiwiSaver Scheme,Growth,1.37,7.18,5.54,4–5,4,5,6,12,False,True,2019
+373,Stepping Stones 46-55,Generate KiwiSaver Scheme,Balanced,1.36,6.23,4.32,3–4,3,4,4,9,False,True,2019
+374,Stepping Stones 56-60,Generate KiwiSaver Scheme,Balanced,1.31,5.49,4.0,3–4,3,4,4,9,False,True,2017
+375,Stepping Stones 61-64,Generate KiwiSaver Scheme,Balanced,1.26,4.74,3.5,3–4,3,4,4,9,False,True,2019
+376,Stepping Stones 65-75,Generate KiwiSaver Scheme,Conservative,1.23,4.0,,2–3,2,3,1,4,False,False,
+377,Stepping Stones 76+,Generate KiwiSaver Scheme,Conservative,1.2,3.26,,2–3,2,3,1,4,False,False,
+378,Stepping Stones Growth 0-50,Generate KiwiSaver Scheme,Aggressive,1.39,8.77,7.01,5–7,5,7,10,40,False,True,2020
+379,Stepping Stones Growth 51-55,Generate KiwiSaver Scheme,Growth,1.37,7.18,5.54,4–5,4,5,6,12,False,True,2020
+380,Stepping Stones Growth 56-60,Generate KiwiSaver Scheme,Balanced,1.36,6.23,4.32,3–4,3,4,4,9,False,True,2020
+381,Stepping Stones Growth 61-75,Generate KiwiSaver Scheme,Balanced,1.26,4.74,,3–4,3,4,4,9,False,False,
+382,Stepping Stones Growth 76+,Generate KiwiSaver Scheme,Conservative,1.2,3.26,,2–3,2,3,1,4,False,False,
+383,Strategic High Growth Fund,Koura KiwiSaver Scheme,Aggressive,1.2,13.67,,5–7,5,7,10,40,True,False,
+384,Summer Australian Equities,Summer KiwiSaver Scheme,Aggressive,1.02,12.19,8.01,5–7,5,7,10,40,False,True,2016
+385,Summer Balanced Selection,Summer KiwiSaver Scheme,Balanced,1.02,6.57,3.36,3–4,3,4,4,9,False,True,2019
+386,Summer Conservative Selection,Summer KiwiSaver Scheme,Conservative,0.87,4.37,2.17,2–3,2,3,1,4,False,True,2019
+387,Summer Global Equities,Summer KiwiSaver Scheme,Aggressive,1.02,12.15,6.87,5–7,5,7,10,40,False,True,2016
+388,Summer Global Fixed Interest,Summer KiwiSaver Scheme,Defensive,0.87,2.91,0.2,1–2,1,2,0,3,False,True,2016
+389,Summer Growth Selection,Summer KiwiSaver Scheme,Growth,1.02,8.71,4.51,4–5,4,5,6,12,False,True,2019
+390,Summer Listed Property,Summer KiwiSaver Scheme,Aggressive,1.02,5.65,-2.69,5–7,5,7,10,40,False,True,2016
+391,Summer New Zealand Cash,Summer KiwiSaver Scheme,Defensive,0.62,2.19,2.41,1–2,1,2,0,3,False,True,2016
+392,Summer New Zealand Equities,Summer KiwiSaver Scheme,Aggressive,1.02,5.46,1.46,5–7,5,7,10,40,False,True,2016
+393,Summer New Zealand Fixed Interest,Summer KiwiSaver Scheme,Defensive,0.87,2.58,1.24,1–2,1,2,0,3,False,True,2016
+394,Superlife Age Steps - Age 20,Superlife KiwiSaver Scheme,Aggressive,0.73,12.09,6.42,5–7,5,7,10,40,False,True,2016
+395,Superlife Age Steps - Age 30,Superlife KiwiSaver Scheme,Growth,0.72,10.29,5.43,4–5,4,5,6,12,False,True,2016
+396,Superlife Age Steps - Age 40,Superlife KiwiSaver Scheme,Growth,0.72,10.29,5.43,4–5,4,5,6,12,False,True,2016
+397,Superlife Age Steps - Age 50,Superlife KiwiSaver Scheme,Growth,0.71,9.73,5.12,4–5,4,5,6,12,False,True,2016
+398,Superlife Age Steps - Age 60,Superlife KiwiSaver Scheme,Balanced,0.7,7.82,4.03,3–4,3,4,4,9,False,True,2016
+399,Superlife Age Steps - Age 70,Superlife KiwiSaver Scheme,Balanced,0.68,5.81,2.89,3–4,3,4,4,9,False,True,2016
+400,Superlife Age Steps - Age 80,Superlife KiwiSaver Scheme,Defensive,0.66,2.49,0.95,1–2,1,2,0,3,False,True,2016
+401,Superlife Balanced Fund,Superlife KiwiSaver Scheme,Balanced,0.7,8.2,4.28,3–4,3,4,4,9,False,True,2020
+402,Superlife Conservative Fund,Superlife KiwiSaver Scheme,Conservative,0.67,4.94,2.54,2–3,2,3,1,4,False,True,2020
+403,Superlife Default Fund,Superlife KiwiSaver Scheme,Balanced,0.3,7.14,,3–4,3,4,4,9,False,True,2021
+404,Superlife Growth Fund,Superlife KiwiSaver Scheme,Growth,0.71,10.1,5.5,4–5,4,5,6,12,False,True,2020
+405,Superlife High Growth Fund,Superlife KiwiSaver Scheme,Aggressive,0.73,12.54,6.67,5–7,5,7,10,40,False,True,2020
+406,Superlife Income Fund,Superlife KiwiSaver Scheme,Defensive,0.66,1.39,0.34,1–2,1,2,0,3,False,True,2020
+407,Sharesies Smartshares Balanced Fund,Sharesies KiwiSaver Scheme,Balanced,0.5,8.31,,3–4,3,4,4,9,False,False,
+408,Thematic Fund,Generate KiwiSaver Scheme,Aggressive,1.3,,,5–7,5,7,10,40,False,False,
+409,Total World (nzd Hedged) Fund,Superlife KiwiSaver Scheme,Aggressive,0.68,12.35,7.63,5–7,5,7,10,40,False,True,2020
+410,Total World Fund,Superlife KiwiSaver Scheme,Aggressive,0.68,16.0,11.14,5–7,5,7,10,40,False,True,2019
+411,UK Cash Fund,Superlife KiwiSaver Scheme,Defensive,0.59,2.41,3.49,1–2,1,2,0,3,False,True,2016
+412,US 500 Fund,Superlife KiwiSaver Scheme,Aggressive,0.64,15.28,14.12,5–7,5,7,10,40,False,True,2019
+413,US Equities Fund,Koura KiwiSaver Scheme,Aggressive,0.73,13.4,11.59,5–7,5,7,10,40,True,True,2020
+414,US Large Growth Fund,Superlife KiwiSaver Scheme,Aggressive,0.67,13.54,13.58,5–7,5,7,10,40,False,True,2019
+415,US Large Value Fund,Superlife KiwiSaver Scheme,Aggressive,0.67,15.94,13.08,5–7,5,7,10,40,False,True,2019
+416,US Mid Cap Fund,Superlife KiwiSaver Scheme,Aggressive,0.67,11.5,9.09,5–7,5,7,10,40,False,True,2019
+417,US Small Cap Fund,Superlife KiwiSaver Scheme,Aggressive,0.67,16.57,7.59,5–7,5,7,10,40,False,True,2019

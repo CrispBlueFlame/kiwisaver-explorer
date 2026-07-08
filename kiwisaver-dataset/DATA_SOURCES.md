@@ -10,6 +10,17 @@ We spent roughly 8 hours collecting data that should be downloadable from a sing
 
 This document describes the full data-collection effort behind the dataset. The KiwiSaver Explorer tool built on top of it draws mainly on two of these sources: the FMA quarterly history (September 2013 to December 2022, with the 2013 to mid-2015 quarters recovered from Wayback Machine archives) and the current Smart Investor snapshot.
 
+## For Journalists: the one thing that changed
+
+The story here is not that KiwiSaver data is secret. It is that it used to be easy and then quietly stopped being easy. The timeline:
+
+- **2013 to 2015:** the FMA published quarterly fund data as SAS-generated XLSB files. Machine-readable, but a cryptic format. These files are no longer on the FMA site and survive only because the Wayback Machine crawled them.
+- **2015 to December 2022:** the FMA published consolidated CSV spreadsheets every quarter, one file covering every KiwiSaver fund's returns, fees, asset allocations, and top 10 holdings. Simple, machine-readable, openable in Excel by anyone. This is the proof it can be done centrally.
+- **December 2022:** the FMA stopped publishing the consolidated quarterly files. No single-file successor was put in its place.
+- **2023 onward:** the authoritative source is the Companies Office Disclose Register, where every provider files their quarterly data. Getting it in bulk requires creating an account, subscribing to the API, and waiting for approval. For anyone without that access, the only route to recent fund-level data is to visit each provider's website and download individual quarterly update PDFs one by one, with no central directory of where they live.
+
+The net effect: a member who wants to compare funds across the last few years now needs the skills and patience of a software engineer to assemble data the regulator once handed out in a single download. Everything in this dataset is public. The barrier is that it is scattered, undocumented, and, since the end of 2022, no longer consolidated by anyone.
+
 ## What We Collected and Where It Came From
 
 ### 1. FMA Quarterly Fund Updates (2015-2022)

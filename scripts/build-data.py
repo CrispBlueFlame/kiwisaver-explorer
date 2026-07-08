@@ -240,6 +240,8 @@ def build():
     _write("meta.json", meta)
     _write("early-returns.json", early)
 
+    _write_csvs(funds, providers, hist_out, early)
+
     print(f"funds={len(funds)} providers={len(providers)} "
           f"history_funds={len(hist_out)} fma_rows={len(fma)}")
     print(f"ethical-flagged: {sum(1 for f in funds if f['ethical'])}")
@@ -250,6 +252,52 @@ def _write(name, obj):
     with open(path, "w", encoding="utf-8") as f:
         json.dump(obj, f, separators=(",", ":"), ensure_ascii=False)
     print(f"wrote {name}: {os.path.getsize(path)/1024:.0f} KB")
+
+
+def _write_csvs(funds, providers, hist_out, early):
+    """Tidy CSV mirror of the JSON payloads for reuse (data.govt.nz, analysts).
+    Columns are documented in DATA_DICTIONARY.md."""
+    csv_dir = os.path.join(OUT, "csv")
+    os.makedirs(csv_dir, exist_ok=True)
+
+    def dump(name, header, rows):
+        path = os.path.join(csv_dir, name)
+        with open(path, "w", newline="", encoding="utf-8") as f:
+            w = csv.writer(f)
+            w.writerow(header)
+            w.writerows(rows)
+        print(f"wrote csv/{name}: {len(rows)} rows")
+
+    fund_cols = ["id", "name", "provider", "type", "fee", "return_1yr", "return_5yr",
+                 "risk_band", "risk_lo", "risk_hi", "horizon_lo", "horizon_hi",
+                 "ethical", "has_history", "history_since"]
+    dump("funds.csv", fund_cols, [[f.get(c) for c in fund_cols] for f in funds])
+
+    prov_cols = ["provider", "funds", "avg_fee", "avg_return_5yr", "types", "ethical"]
+    dump("providers.csv", prov_cols,
+         [[p["provider"], p["funds"], p["avg_fee"], p["avg_return_5yr"],
+           ";".join(p["types"]), p["ethical"]] for p in providers])
+
+    byhkey = {f["hkey"]: f for f in funds}
+    alloc_keys = ["cash", "nz_fixed", "intl_fixed", "aus_equities", "intl_equities",
+                  "listed_property", "unlisted_property", "other", "commodities"]
+    hist_cols = (["fund_name", "provider", "quarter", "fee", "return_1yr", "return_5yr",
+                  "risk", "fum", "members"] + ["alloc_" + k for k in alloc_keys])
+    hist_rows = []
+    for hkey, recs in hist_out.items():
+        f = byhkey.get(hkey, {})
+        for r in recs:
+            a = r.get("alloc") or {}
+            hist_rows.append(
+                [f.get("name"), f.get("provider"), r["quarter"], r["fee"],
+                 r["return_1yr"], r["return_5yr"], r["risk"], r["fum"], r["members"]]
+                + [a.get(k) for k in alloc_keys])
+    hist_rows.sort(key=lambda row: (row[0] or "", row[2]))
+    dump("fma-history.csv", hist_cols, hist_rows)
+
+    early_rows = [[cat, p["quarter"], p["return_1yr"]]
+                  for cat in sorted(early) for p in early[cat]]
+    dump("early-returns.csv", ["category", "quarter", "return_1yr"], early_rows)
 
 
 if __name__ == "__main__":
