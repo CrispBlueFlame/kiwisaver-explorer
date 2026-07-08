@@ -121,13 +121,11 @@ Compare.draw = function (funds) {
 };
 
 Compare.init = function () {
-  const sel = document.getElementById("cmp-add");
-  [...KS.funds]
-    .sort((a, b) => a.name.localeCompare(b.name))
-    .forEach((f) => sel.add(new Option(`${f.name} — ${f.provider}`, f.id)));
-  sel.addEventListener("change", () => {
-    if (sel.value) Compare.toggle(+sel.value);
-    sel.value = "";
+  const add = document.getElementById("cmp-add");
+  add.addEventListener("change", () => {
+    const f = KS.fundFromLabel(add.value);
+    if (f) Compare.toggle(f.id);
+    add.value = "";
   });
   document.getElementById("cmp-clear").addEventListener("click", () => Compare.clear());
   Compare.render();

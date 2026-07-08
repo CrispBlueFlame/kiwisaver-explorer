@@ -109,7 +109,8 @@
       <form id="calc-form" class="panel questionnaire" aria-label="Investment settings">
         <h2>Try it out</h2>
         <label class="q">Fund
-          <select name="fund" id="calc-fund"></select>
+          <input type="search" name="fund" id="calc-fund" list="fund-datalist"
+                 placeholder="Search by fund or provider" autocomplete="off">
         </label>
         <div class="mode-toggle" role="tablist">
           <button type="button" id="calc-mode-proj" class="active" data-mode="projection">Project forward</button>
@@ -161,16 +162,19 @@
         <p class="disclaimer">Educational estimate, not advice. Returns are shown after fees and tax.</p>
       </form>
 
-      <div class="panel results" id="calc-results"></div>
+      <div class="calc-output">
+        <div class="panel results" id="calc-results"></div>
+        <div class="panel chart-canvas-wrap"><canvas id="calc-canvas" height="130"></canvas></div>
+      </div>
     </div>
-    <div class="panel chart-canvas-wrap"><canvas id="calc-canvas" height="130"></canvas></div>
   </section>
 
   <!-- COMPARE -->
   <section id="view-compare" class="view" hidden>
     <div class="panel">
       <div class="explorer-controls">
-        <select id="cmp-add"><option value="">Add a fund to compare…</option></select>
+        <input type="search" id="cmp-add" list="fund-datalist"
+               placeholder="Search a fund to add…" autocomplete="off">
         <span class="muted">or use the “＋ Compare” buttons in Find my fund and the Data explorer.</span>
         <button id="cmp-clear" class="btn-secondary" type="button">Clear all</button>
       </div>
@@ -242,6 +246,8 @@
   <section id="view-about" class="view" hidden>
     <div class="panel prose" id="about-content"></div>
   </section>
+
+  <datalist id="fund-datalist"></datalist>
 </main>
 
 <script src="js/data.js" defer></script>

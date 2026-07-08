@@ -61,18 +61,13 @@ App.renderAbout = function () {
     </ul>
 
     <h2>Could you do this yourself?</h2>
-    <p>Realistically, no. Not because any single step is exotic, but because it demands a stack of
-       skills and a tolerance for tedium few people have all at once. To reproduce even the core of
-       it you would need to know the FMA stopped publishing and where the data moved to, scrape a
-       website that has no download button, convert and reconcile years of inconsistently formatted
-       spreadsheets, pull clean tables out of PDFs, and, hardest of all, spot the silent traps: funds
-       with identical names merging together, a risk figure attaching to the wrong fund, an impossible
-       row sitting quietly in the results. A casual attempt does not fail loudly; it hands back a
-       clean-looking, wrong answer.</p>
-    <p>The practical outcome is that most people never do it. They stay in a default fund or pick on
-       brand familiarity, because the honest cost of doing the research by hand is measured in days of
-       specialist work. Doing that collection and cross-checking once, transparently, so the only part
-       left is the choice that actually matters to you, is the whole reason this tool exists.</p>
+    <p>In principle, yes. It just takes an unusual run of steps: knowing the FMA stopped publishing and
+       where the data moved, scraping a site with no download button, reconciling years of
+       inconsistently formatted spreadsheets, and pulling tables out of PDFs. The fiddly part is the
+       quiet data traps, like funds sharing a name, a risk figure landing on the wrong fund, or an
+       occasional impossible row. Those don't throw an error; they just skew the numbers.</p>
+    <p>That's why this collection and cross-checking is done once, in the open, so the only part left
+       is the choice that actually matters to you.</p>
 
     <h2>Known gaps &amp; caveats</h2>
     <ul>${m.known_gaps.map((g) => `<li>${g}</li>`).join("")}</ul>
@@ -94,6 +89,7 @@ App.init = async function () {
   }
   if (window.Chart) Chart.defaults.animation = false;
   document.getElementById("loading").hidden = true;
+  KS.buildFundDatalist();
   Finder.init();
   document.querySelectorAll("#tabs button").forEach((b) =>
     b.addEventListener("click", () => App.show(b.dataset.view))

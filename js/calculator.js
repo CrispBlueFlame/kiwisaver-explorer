@@ -36,7 +36,7 @@ function backtest(fund, amount, freq, startYear, startBal) {
 }
 
 Calc.selectedFund = function () {
-  return KS.funds.find((f) => f.id === +document.getElementById("calc-fund").value);
+  return KS.funds.find((f) => f.id === Calc.fundId);
 };
 
 Calc.setMode = function (mode) {
@@ -177,16 +177,17 @@ Calc.draw = function (sim, benchSeries, f) {
 };
 
 Calc.init = function () {
-  const sel = document.getElementById("calc-fund");
-  const opts = [...KS.funds]
-    .sort((a, b) => a.name.localeCompare(b.name) || a.provider.localeCompare(b.provider))
-    .map((f) => `<option value="${f.id}">${f.name} — ${f.provider}${f.type ? " (" + f.type + ")" : ""}</option>`);
-  sel.innerHTML = opts.join("");
+  const input = document.getElementById("calc-fund");
   // default to a fund that has history so backtest is available
   const def = KS.funds.find((f) => f.has_history && f.type === "Balanced") || KS.funds.find((f) => f.has_history) || KS.funds[0];
-  sel.value = def.id;
+  Calc.fundId = def.id;
+  input.value = KS.fundLabel(def);
 
-  sel.addEventListener("change", Calc.onFundChange);
+  input.addEventListener("change", () => {
+    const f = KS.fundFromLabel(input.value);
+    if (f) { Calc.fundId = f.id; Calc.onFundChange(); }
+    else input.value = KS.fundLabel(Calc.selectedFund()); // restore last valid pick
+  });
   document.getElementById("calc-mode-proj").addEventListener("click", () => Calc.setMode("projection"));
   document.getElementById("calc-mode-back").addEventListener("click", () => Calc.setMode("backtest"));
   ["calc-amount", "calc-freq", "calc-years", "calc-rate", "calc-startyear", "calc-start"].forEach((id) =>

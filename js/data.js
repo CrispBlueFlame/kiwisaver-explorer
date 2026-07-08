@@ -33,6 +33,25 @@ KS.fmtMoney = (v) => {
 };
 KS.signClass = (v) => (v == null ? "" : v >= 0 ? "pos" : "neg");
 
+// shared searchable fund picker: one <datalist> feeds calculator + compare
+KS.fundLabel = (f) => `${f.name} — ${f.provider}${f.type ? " (" + f.type + ")" : ""}`;
+KS.buildFundDatalist = function () {
+  const dl = document.getElementById("fund-datalist");
+  if (!dl) return;
+  KS.fundByLabel = new Map();
+  const sorted = [...KS.funds].sort(
+    (a, b) => a.name.localeCompare(b.name) || a.provider.localeCompare(b.provider)
+  );
+  dl.innerHTML = sorted
+    .map((f) => {
+      const label = KS.fundLabel(f);
+      KS.fundByLabel.set(label, f);
+      return `<option value="${label.replace(/"/g, "&quot;")}"></option>`;
+    })
+    .join("");
+};
+KS.fundFromLabel = (val) => (KS.fundByLabel ? KS.fundByLabel.get((val || "").trim()) : null);
+
 // colour palette by fund type, used across finder / explorer / charts
 KS.TYPE_COLOR = {
   Defensive: "#4aa3ff",
