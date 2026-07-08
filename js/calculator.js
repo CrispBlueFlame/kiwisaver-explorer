@@ -80,7 +80,7 @@ Calc.render = function () {
   const startBal = +document.getElementById("calc-start").value || 0;
   const freqWord = { 52: "week", 26: "fortnight", 12: "month" }[freq];
   const res = document.getElementById("calc-results");
-  let sim, headline, sentence, extra, benchSeries = null, benchFinal = null;
+  let sim, headline, sentence, extra, benchSeries = null, benchFinal = null, band = null;
 
   if (Calc.mode === "projection") {
     const years = +document.getElementById("calc-years").value;
@@ -95,6 +95,16 @@ Calc.render = function () {
     extra = feeEst != null
       ? `Estimated fees over that time: about <b>${KS.fmtMoney(feeEst)}</b> (already reflected in the returns above).`
       : "";
+    // best/worst band from the fund's own historical volatility (±1 standard deviation of annual returns)
+    const vol = f.has_history ? KS.returnVolatility(f.hkey) : null;
+    if (vol != null) {
+      const lo = project(amount, freq, years, rate - vol, startBal);
+      const hi = project(amount, freq, years, rate + vol, startBal);
+      band = { lo: lo.points.map((p) => p.bal), hi: hi.points.map((p) => p.bal), vol, loFinal: lo.final, hiFinal: hi.final };
+      extra += `${extra ? " " : ""}Good and bad runs happen: based on this fund's past year-to-year swings (about ` +
+        `±${vol.toFixed(1)}%), the outcome could plausibly land between <b>${KS.fmtMoney(lo.final)}</b> and ` +
+        `<b>${KS.fmtMoney(hi.final)}</b>.`;
+    }
     // benchmark: average fund of the same type
     const bench = KS.benchmarkReturn(f.type);
     if (bench != null) {
@@ -124,7 +134,7 @@ Calc.render = function () {
     ${benchFinal != null ? `<p class="muted">For comparison, the average ${f.type} fund would reach about <b>${KS.fmtMoney(benchFinal)}</b>.</p>` : ""}
     ${extra ? `<p class="disclaimer">${extra}</p>` : ""}`;
 
-  Calc.draw(sim, benchSeries, f);
+  Calc.draw(sim, benchSeries, f, band);
 };
 
 function estFees(yearBal, feePct) {
@@ -140,7 +150,7 @@ function riskLadder(step) {
   return s;
 }
 
-Calc.draw = function (sim, benchSeries, f) {
+Calc.draw = function (sim, benchSeries, f, band) {
   const labels = sim.points.map((p) => p.label);
   const balance = sim.points.map((p) => p.bal);
   // cumulative contributions line
@@ -152,9 +162,15 @@ Calc.draw = function (sim, benchSeries, f) {
   const contribLine = sim.points.map((_, i) => start + perStep * i);
 
   const datasets = [
-    { label: "Your balance", data: balance, borderColor: KS.typeColor(f.type), backgroundColor: KS.typeColor(f.type) + "33", fill: true, tension: 0.25 },
+    { label: "Your balance", data: balance, borderColor: KS.typeColor(f.type), backgroundColor: KS.typeColor(f.type) + "33", fill: band ? false : true, tension: 0.25 },
     { label: "Money you put in", data: contribLine, borderColor: "#8fa3b5", borderDash: [5, 4], pointRadius: 0, tension: 0 },
   ];
+  if (band) {
+    // shaded ±1 std-dev band: draw the low line, then fill up to the high line
+    const c = KS.typeColor(f.type);
+    datasets.push({ label: "Worse run", data: band.lo, borderColor: c + "55", pointRadius: 0, tension: 0.25, fill: false });
+    datasets.push({ label: "Better run", data: band.hi, borderColor: c + "55", pointRadius: 0, tension: 0.25, fill: "-1", backgroundColor: c + "22" });
+  }
   if (benchSeries) datasets.push({ label: `Average ${f.type} fund`, data: benchSeries, borderColor: "#c0c8d0", borderDash: [2, 3], pointRadius: 0, tension: 0.25 });
 
   if (Calc.chart) Calc.chart.destroy();

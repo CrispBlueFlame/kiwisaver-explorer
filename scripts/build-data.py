@@ -138,6 +138,8 @@ def build():
         tm = TYPE_META.get(ftype, {})
         risk_band = (f"{tm['risk_lo']}–{tm['risk_hi']}" if tm else None)
         ethical = any(h in norm_name(r["fund_name"]) or h in norm_name(r["provider"]) for h in ETHICAL_HINTS)
+        h_series = hist.get(hkey) or []
+        history_since = h_series[0]["quarter"][:4] if len(h_series) > 1 else None
         fund = {
             "id": fid,
             "name": name,
@@ -154,6 +156,7 @@ def build():
             "horizon_hi": tm.get("horizon_hi"),
             "ethical": ethical,
             "has_history": hkey in hist and len(hist[hkey]) > 1,
+            "history_since": history_since,
             "hkey": hkey,
         }
         funds.append(fund)

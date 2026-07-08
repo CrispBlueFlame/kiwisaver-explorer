@@ -103,3 +103,12 @@ KS.yearlyReturns = function (hkey) {
 
 // a fund's best available "expected return" assumption for projections
 KS.assumedReturn = (f) => f.return_5yr ?? f.return_1yr ?? KS.benchmarkReturn(f.type);
+
+// standard deviation of a fund's annual returns (percentage points); null if too few years
+KS.returnVolatility = function (hkey) {
+  const vals = Object.values(KS.yearlyReturns(hkey));
+  if (vals.length < 3) return null;
+  const mean = vals.reduce((a, b) => a + b, 0) / vals.length;
+  const variance = vals.reduce((a, b) => a + (b - mean) ** 2, 0) / (vals.length - 1);
+  return Math.sqrt(variance);
+};

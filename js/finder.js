@@ -84,7 +84,11 @@ Finder.rank = function (p) {
     if (f.return_5yr == null) reasons.push({ t: "No 5yr track record", k: "warn" });
 
     if (f.ethical) reasons.push({ t: "Ethical / responsible", k: "" });
-    if (f.has_history) reasons.push({ t: "Long data history", k: "neutral" });
+    if (f.has_history)
+      reasons.push({
+        t: f.history_since && f.history_since <= "2015" ? `Long data history (since ${f.history_since})` : "Long data history",
+        k: "neutral",
+      });
 
     return { f, score, reasons, feeCost: KS.feeCost(f.fee, p.balance) };
   });

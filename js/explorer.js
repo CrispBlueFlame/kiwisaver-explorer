@@ -106,6 +106,15 @@ Explorer.showDetail = function (id) {
   const f = KS.funds.find((x) => x.id === id);
   const box = document.getElementById("fund-detail");
   const hist = f.has_history ? KS.history[f.hkey] : null;
+  let histHead = "";
+  if (hist && hist.length) {
+    const yr = (q) => (q || "").slice(0, 4);
+    const first = yr(hist[0].quarter);
+    const last = yr(hist[hist.length - 1].quarter);
+    const span = first === last ? first : `${first}–${last}`;
+    const deep = first <= "2015";
+    histHead = `<h3>History (FMA ${span})${deep ? ` <span class="depth-pill">deep · since ${first}</span>` : ""}</h3>`;
+  }
   box.hidden = false;
   box.innerHTML = `
     <h2><span class="dot" style="background:${KS.typeColor(f.type)}"></span>${f.name}
@@ -119,7 +128,7 @@ Explorer.showDetail = function (id) {
       <div class="metric"><b>${KS.fmtPct(f.fee)}</b><span>annual fee</span></div>
       <div class="metric"><b>${KS.fmtMoney(KS.feeCost(f.fee, 50000))}</b><span>fee on $50k</span></div>
     </div>
-    ${hist ? `<h3>History (FMA 2015–2022)</h3><canvas id="detail-canvas" height="120"></canvas>
+    ${hist ? `${histHead}<canvas id="detail-canvas" height="120"></canvas>
       <p class="muted">${latestAlloc(hist)}</p>`
       : `<p class="muted">No quarterly history available for this fund in the FMA dataset.</p>`}
   `;

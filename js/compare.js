@@ -36,8 +36,21 @@ const METRICS = [
   { label: "Fee/yr on $50k", get: (f) => KS.fmtMoney(KS.feeCost(f.fee, 50000)), best: (f) => -(f.fee ?? Infinity) },
   { label: "1yr return", get: (f) => KS.fmtPct(f.return_1yr), best: (f) => f.return_1yr ?? -Infinity, sign: true, raw: (f) => f.return_1yr },
   { label: "5yr return", get: (f) => KS.fmtPct(f.return_5yr), best: (f) => f.return_5yr ?? -Infinity, sign: true, raw: (f) => f.return_5yr },
-  { label: "History 2015–2022", get: (f) => (f.has_history ? "Yes" : "—") },
+  { label: "Quarterly history", get: (f) => (f.history_since ? `since ${f.history_since}` : "—") },
 ];
+
+// two "obvious alternatives": within the most illustrative type, the cheapest vs the priciest
+// fund that both have a 5yr track record — a clear fee-drag contrast for a first-time visitor.
+Compare.suggestPair = function () {
+  for (const type of ["Balanced", "Growth", "Conservative"]) {
+    const pool = KS.funds.filter((f) => f.type === type && f.fee != null && f.return_5yr != null);
+    if (pool.length < 2) continue;
+    const byFee = [...pool].sort((a, b) => a.fee - b.fee);
+    const lo = byFee[0], hi = byFee[byFee.length - 1];
+    if (lo.id !== hi.id && hi.fee - lo.fee > 0.2) return [lo, hi];
+  }
+  return null;
+};
 
 Compare.render = function () {
   const funds = Compare.ids.map((id) => KS.funds.find((f) => f.id === id)).filter(Boolean);
@@ -49,6 +62,15 @@ Compare.render = function () {
     empty.hidden = false;
     wrap.hidden = true;
     chartPanel.hidden = true;
+    const pair = Compare.suggestPair();
+    empty.innerHTML =
+      `No funds selected yet. Add 2–3 to see them side by side.` +
+      (pair
+        ? ` <button type="button" class="cmp-quick" id="cmp-quick">Quick compare: ` +
+          `${pair[0].name} (${KS.fmtPct(pair[0].fee)} fee) vs ${pair[1].name} (${KS.fmtPct(pair[1].fee)} fee)</button>`
+        : "");
+    const q = document.getElementById("cmp-quick");
+    if (q) q.addEventListener("click", () => { Compare.ids = pair.map((f) => f.id); Compare.sync(); });
     return;
   }
   empty.hidden = true;
