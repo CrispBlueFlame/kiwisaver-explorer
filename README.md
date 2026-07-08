@@ -30,6 +30,17 @@ python3 scripts/build-data.py
 
 Push to GitHub, then in **Settings → Pages** set the source to the `main` branch, root folder. The site is served as-is.
 
+## Key findings
+
+Three things the data shows, each reproducible from the published JSON by running
+`python3 scripts/findings.py`:
+
+1. Fees vary about 8x across funds, and index funds cost roughly 3x less than the median.
+2. Paying a higher fee does not buy a higher net return (correlation is effectively zero, and negative in the higher-risk categories).
+3. Funds sharing a risk label hold near-identical asset mixes, so much of the fee gap buys near-identical exposure.
+
+Full write-up, methods, figures and caveats are in [`FINDINGS.md`](FINDINGS.md).
+
 ## Data & disclaimer
 
 Data compiled from public sources (Smart Investor / Sorted, FundCompare, FMA quarterly fund updates 2015–2022) under CC BY 4.0. This is an educational tool, **not financial advice**. Always check a fund's current Product Disclosure Statement.
